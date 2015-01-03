@@ -1,0 +1,48 @@
+.background {
+    position: absolute;
+    top: 0; left:0; 
+    max-width: 100%;
+    background-image: url('http://adventured.com/wp-content/uploads/hike.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    color: white;
+    text-align: left;
+    padding-top: 5em;
+    padding-left: 5em;
+}
+
+.title p {
+    padding-right: 5em;
+    text-align: justify;
+}
+
+.title h3 {
+    margin-bottom: 3em;
+}
+
+.title h4 {
+    margin-top: 3em;
+}
+
+.full_page h4 {
+    margin-top 0;
+}
+
+.technologies {
+    margin: auto;
+    width: 600px;
+}
+
+.full_page {
+    height: 100vh;
+    max-height: 100%;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.full_page p {
+    margin-bottom: 0;
+}

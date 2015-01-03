@@ -9,13 +9,13 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 
 		// Home state routing
 		$stateProvider.
-		state('landing', {
+		state('landing', { //maybe remove this one
 			url: '/landing',
 			templateUrl: 'modules/core/views/landing.client.view.html'
 		}).
 		state('home', {
 			url: '/',
-			templateUrl: 'modules/core/views/home.client.view.html'
+			templateUrl: 'modules/core/views/landing.client.view.html'
 		}).
     	state('dash', {
 			url: '/dashboard',

@@ -65,7 +65,7 @@
 			// Run controller functionality
 			scope.find();
 			$httpBackend.flush();
-
+			
 			// Test scope value
 			expect(scope.trips).toEqualData(sampleTrips);
 		}));

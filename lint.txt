@@ -1,0 +1,1230 @@
+[4mRunning "jshint:all" (jshint) task[24m
+[32m>> [39m66 files lint free.
+
+[4mRunning "csslint:all" (csslint) task[24m
+Linting public/modules/core/css/landing/index.css ...[31mERROR[39m
+[31m[[39m[33mL31[39m[31m:[39m[33mC1[39m[31m][39m
+Rule is empty. Rules without any properties specified should be removed. (empty-rules)
+[31m[[39m[33mL32[39m[31m:[39m[33mC16[39m[31m][39m
+[31m>> [39mExpected COLON at line 32, col 16. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL43[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background-color (hex or RGB) should precede RGBA background-color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+Linting public/modules/core/css/landing/landing_page.css ...[31mERROR[39m
+[31m[[39m[33mL511[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines shouldn't be hidden unless other visual changes are made. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL529[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL529[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL550[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL550[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL658[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Firefox 3.6+, Opera 11.1+. When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL677[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL677[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL803[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL810[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL819[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL899[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL899[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL902[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines shouldn't be hidden unless other visual changes are made. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL969[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1162[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1165[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1168[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1353[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1353[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1377[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1377[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1425[39m[31m:[39m[33mC5[39m[31m][39m
+The property -webkit-box-sizing is compatible with -moz-box-sizing and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1441[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1441[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1449[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1449[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1451[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1465[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1473[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1473[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1482[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1482[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1492[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1502[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1517[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1517[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1540[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1540[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1542[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1548[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1563[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1563[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1583[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback border (hex or RGB) should precede RGBA border. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1603[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1603[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1677[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1677[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1698[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1698[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1708[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1721[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1728[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1735[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1741[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1752[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1752[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1761[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1763[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1773[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1781[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1792[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1819[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1823[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1823[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1843[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1849[39m[31m:[39m[33mC22[39m[31m][39m
+[31m>> [39mUnexpected token 'not(' at line 1849, col 22. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL1849[39m[31m:[39m[33mC37[39m[31m][39m
+[31m>> [39mExpected LBRACE at line 1849, col 37. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL1849[39m[31m:[39m[33mC37[39m[31m][39m
+[31m>> [39mUnexpected token ')' at line 1849, col 37. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL1849[39m[31m:[39m[33mC22[39m[31m][39m
+[31m>> [39mExpected LBRACE at line 1849, col 22. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL1852[39m[31m:[39m[33mC1[39m[31m][39m
+[31m>> [39mUnexpected token '}' at line 1852, col 1. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL1869[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1869[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1897[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1901[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1901[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1907[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1915[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1932[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1932[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1940[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1955[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1967[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2000[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2067[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2067[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2134[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2134[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2172[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2172[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2248[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2248[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2306[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2306[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2353[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2353[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2435[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2435[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2576[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL2606[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background-color (hex or RGB) should precede RGBA background-color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL2752[39m[31m:[39m[33mC3[39m[31m][39m
+[31m>> [39mExpected RBRACE at line 2752, col 3. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2752[39m[31m:[39m[33mC22[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name1. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2752[39m[31m:[39m[33mC22[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2752, col 22. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2768[39m[31m:[39m[33mC14[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2768, col 14. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2768[39m[31m:[39m[33mC14[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name1. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2785[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-animation-name is compatible with -webkit-animation-name and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2788[39m[31m:[39m[33mC22[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2788, col 22. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2788[39m[31m:[39m[33mC22[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name2. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2810[39m[31m:[39m[33mC5[39m[31m][39m
+[31m>> [39mUnexpected token '}' at line 2810, col 5. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2833[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-animation-name is compatible with -webkit-animation-name and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2836[39m[31m:[39m[33mC20[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2836, col 20. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2836[39m[31m:[39m[33mC20[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name3. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2851[39m[31m:[39m[33mC13[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2851, col 13. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2851[39m[31m:[39m[33mC13[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name3. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2867[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-animation-name is compatible with -webkit-animation-name and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2870[39m[31m:[39m[33mC20[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2870, col 20. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2870[39m[31m:[39m[33mC20[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name4. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2885[39m[31m:[39m[33mC13[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2885, col 13. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2885[39m[31m:[39m[33mC13[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name4. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2901[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-animation-name is compatible with -webkit-animation-name and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2904[39m[31m:[39m[33mC20[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2904, col 20. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2904[39m[31m:[39m[33mC20[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name5. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2919[39m[31m:[39m[33mC13[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2919, col 13. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2919[39m[31m:[39m[33mC13[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name5. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2935[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-animation-name is compatible with -webkit-animation-name and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2938[39m[31m:[39m[33mC20[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2938, col 20. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2938[39m[31m:[39m[33mC20[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name6. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2946[39m[31m:[39m[33mC13[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name6. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2946[39m[31m:[39m[33mC13[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2946, col 13. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2955[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-animation-name is compatible with -webkit-animation-name and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2957[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2957[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL2960[39m[31m:[39m[33mC20[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2960, col 20. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2960[39m[31m:[39m[33mC20[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name7. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2979[39m[31m:[39m[33mC1[39m[31m][39m
+[31m>> [39mUnexpected token '}' at line 2979, col 1. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2979[39m[31m:[39m[33mC13[39m[31m][39m
+[31m>> [39mExpected IDENT at line 2979, col 13. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2979[39m[31m:[39m[33mC13[39m[31m][39m
+[31m>> [39mUnknown @ rule: @name7. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2998[39m[31m:[39m[33mC1[39m[31m][39m
+[31m>> [39mUnexpected token '}' at line 2998, col 1. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL2999[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-animation-name is compatible with -webkit-animation-name and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3002[39m[31m:[39m[33mC1[39m[31m][39m
+[31m>> [39mUnexpected token '}' at line 3002, col 1. This rule looks for recoverable syntax errors. (errors)
+[31m[[39m[33mL3013[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3013[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3026[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3030[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3030[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3038[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3038[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3065[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3091[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL3095[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL3099[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL3119[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3119[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3123[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL3148[39m[31m:[39m[33mC5[39m[31m][39m
+The property -webkit-box-shadow is compatible with -moz-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3151[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3151[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3170[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3170[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3191[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL3191[39m[31m:[39m[33mC14[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL3191[39m[31m:[39m[33mC28[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL3191[39m[31m:[39m[33mC39[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL3194[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL3213[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background-color (hex or RGB) should precede RGBA background-color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL3216[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background-color (hex or RGB) should precede RGBA background-color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL3245[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL3306[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3306[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3313[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3319[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3366[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3372[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3383[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3383[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3453[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transform is compatible with -webkit-transform, -moz-transform, -ms-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3534[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3534[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3545[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3545[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3558[39m[31m:[39m[33mC5[39m[31m][39m
+The property -moz-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL3558[39m[31m:[39m[33mC5[39m[31m][39m
+The property -o-transition is compatible with -webkit-transition and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+Linting public/css/buttons.css ...[31mERROR[39m
+[31m[[39m[33mL400[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+Linting public/css/loadbar.css ...[31mERROR[39m
+[31m[[39m[33mL14[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background-color (hex or RGB) should precede RGBA background-color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+Linting public/css/style_v1.css ...[31mERROR[39m
+[31m[[39m[33mL1[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL10[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL21[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL25[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL37[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL57[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL70[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL81[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL112[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL116[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL120[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL123[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL126[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL129[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL173[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL178[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL183[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL186[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL203[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL210[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL214[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL283[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL322[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Old Webkit (Safari 4+, Chrome). When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL404[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL406[39m[31m:[39m[33mC10[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL409[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL414[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL427[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL428[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL435[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL453[39m[31m:[39m[33mC16[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL456[39m[31m:[39m[33mC17[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL486[39m[31m:[39m[33mC3[39m[31m][39m
+Standard property 'box-sizing' should come after vendor-prefixed property '-moz-box-sizing'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL525[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL554[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL572[39m[31m:[39m[33mC3[39m[31m][39m
+Standard property 'box-sizing' should come after vendor-prefixed property '-moz-box-sizing'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL573[39m[31m:[39m[33mC3[39m[31m][39m
+Standard property 'box-sizing' should come after vendor-prefixed property '-webkit-box-sizing'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL574[39m[31m:[39m[33mC3[39m[31m][39m
+The property -webkit-appearance is compatible with -moz-appearance and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL575[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL585[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL588[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL647[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background-color (hex or RGB) should precede RGBA background-color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL663[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL677[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL687[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL690[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL693[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL697[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL703[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback color (hex or RGB) should precede RGBA color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL719[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL736[39m[31m:[39m[33mC3[39m[31m][39m
+The property -ms-user-select is compatible with -moz-user-select and -webkit-user-select and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL736[39m[31m:[39m[33mC3[39m[31m][39m
+Missing standard property 'user-select' to go along with '-moz-user-select'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL737[39m[31m:[39m[33mC3[39m[31m][39m
+Missing standard property 'user-select' to go along with '-webkit-user-select'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL744[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL750[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL781[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback border (hex or RGB) should precede RGBA border. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL783[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL786[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL806[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Old Webkit (Safari 4+, Chrome). When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL806[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL815[39m[31m:[39m[33mC10[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL817[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background-color (hex or RGB) should precede RGBA background-color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL890[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL907[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL918[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL921[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL936[39m[31m:[39m[33mC16[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL939[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL947[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL1060[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1078[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Old Webkit (Safari 4+, Chrome). When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL1091[39m[31m:[39m[33mC18[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1108[39m[31m:[39m[33mC10[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1146[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL1197[39m[31m:[39m[33mC1[39m[31m][39m
+2 IDs in the selector, really? Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1203[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1211[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1261[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Opera 11.1+. When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL1287[39m[31m:[39m[33mC3[39m[31m][39m
+Duplicate property 'background-image' found. Duplicate properties must appear one after the other. (duplicate-properties)
+[31m[[39m[33mL1306[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1314[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1315[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1318[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1319[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1328[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1331[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1331[39m[31m:[39m[33mC39[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1331[39m[31m:[39m[33mC96[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC37[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC91[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC145[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC235[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC181[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1338[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1338[39m[31m:[39m[33mC41[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1338[39m[31m:[39m[33mC99[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1339[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1343[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1346[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1349[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1352[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1375[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1376[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1380[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1380[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL1396[39m[31m:[39m[33mC26[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1396[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1404[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1407[39m[31m:[39m[33mC69[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1407[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1407[39m[31m:[39m[33mC26[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1412[39m[31m:[39m[33mC25[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1412[39m[31m:[39m[33mC67[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1412[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1422[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL1446[39m[31m:[39m[33mC10[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1451[39m[31m:[39m[33mC11[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1486[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1489[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1493[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1501[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1519[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1531[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1534[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1535[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1538[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1544[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1552[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL1552[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1562[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1566[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1566[39m[31m:[39m[33mC97[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1566[39m[31m:[39m[33mC148[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1566[39m[31m:[39m[33mC186[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1566[39m[31m:[39m[33mC46[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1569[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1577[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1625[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1643[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1649[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1652[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1675[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1678[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1687[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1690[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1693[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1697[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1714[39m[31m:[39m[33mC1[39m[31m][39m
+2 IDs in the selector, really? Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1718[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1733[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1738[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1741[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1744[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1747[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1751[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1754[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1763[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1773[39m[31m:[39m[33mC3[39m[31m][39m
+Missing standard property 'transform' to go along with '-moz-transform'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL1773[39m[31m:[39m[33mC3[39m[31m][39m
+The property -ms-transform is compatible with -moz-transform, -webkit-transform, -o-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1774[39m[31m:[39m[33mC3[39m[31m][39m
+Missing standard property 'transform' to go along with '-webkit-transform'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL1775[39m[31m:[39m[33mC3[39m[31m][39m
+Missing standard property 'transform' to go along with '-o-transform'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL1782[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1798[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1841[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1889[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1906[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1923[39m[31m:[39m[33mC12[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1923[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1928[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1931[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1935[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1938[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1942[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1945[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2015[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2025[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL2027[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2039[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2039[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Old Webkit (Safari 4+, Chrome). When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL2052[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2058[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2064[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2066[39m[31m:[39m[33mC9[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2070[39m[31m:[39m[33mC8[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2078[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2081[39m[31m:[39m[33mC32[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2081[39m[31m:[39m[33mC35[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2088[39m[31m:[39m[33mC35[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2088[39m[31m:[39m[33mC32[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2139[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2145[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2151[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2156[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2161[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2186[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL2199[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2202[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2208[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2213[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2216[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2219[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2232[39m[31m:[39m[33mC18[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2243[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2246[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+Linting public/css/style_v2.css ...[31mERROR[39m
+[31m[[39m[33mL1[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL10[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL21[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL25[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL37[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL57[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL70[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL81[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL112[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL116[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL120[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL123[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL126[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL129[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL173[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL178[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL183[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL186[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL203[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL210[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL214[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL283[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL322[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Old Webkit (Safari 4+, Chrome). When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL404[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL406[39m[31m:[39m[33mC10[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL409[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL414[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL427[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL428[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL435[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL453[39m[31m:[39m[33mC16[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL456[39m[31m:[39m[33mC17[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL486[39m[31m:[39m[33mC3[39m[31m][39m
+Standard property 'box-sizing' should come after vendor-prefixed property '-moz-box-sizing'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL525[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL554[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL572[39m[31m:[39m[33mC3[39m[31m][39m
+Standard property 'box-sizing' should come after vendor-prefixed property '-moz-box-sizing'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL573[39m[31m:[39m[33mC3[39m[31m][39m
+Standard property 'box-sizing' should come after vendor-prefixed property '-webkit-box-sizing'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL574[39m[31m:[39m[33mC3[39m[31m][39m
+The property -webkit-appearance is compatible with -moz-appearance and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL575[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL585[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL588[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL647[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background-color (hex or RGB) should precede RGBA background-color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL663[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL677[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL687[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL690[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL693[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL697[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL703[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback color (hex or RGB) should precede RGBA color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL719[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL736[39m[31m:[39m[33mC3[39m[31m][39m
+The property -ms-user-select is compatible with -moz-user-select and -webkit-user-select and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL736[39m[31m:[39m[33mC3[39m[31m][39m
+Missing standard property 'user-select' to go along with '-moz-user-select'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL737[39m[31m:[39m[33mC3[39m[31m][39m
+Missing standard property 'user-select' to go along with '-webkit-user-select'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL744[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL750[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL781[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback border (hex or RGB) should precede RGBA border. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL783[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL786[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL806[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Old Webkit (Safari 4+, Chrome). When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL806[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL815[39m[31m:[39m[33mC10[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL817[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background-color (hex or RGB) should precede RGBA background-color. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL890[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL907[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL918[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL921[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL936[39m[31m:[39m[33mC16[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL939[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL947[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL1060[39m[31m:[39m[33mC3[39m[31m][39m
+The property -moz-box-shadow is compatible with -webkit-box-shadow and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1078[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Old Webkit (Safari 4+, Chrome). When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL1091[39m[31m:[39m[33mC18[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1108[39m[31m:[39m[33mC10[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1146[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL1197[39m[31m:[39m[33mC1[39m[31m][39m
+2 IDs in the selector, really? Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1203[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1211[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1261[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Opera 11.1+. When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL1287[39m[31m:[39m[33mC3[39m[31m][39m
+Duplicate property 'background-image' found. Duplicate properties must appear one after the other. (duplicate-properties)
+[31m[[39m[33mL1306[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1314[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1315[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1318[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1319[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1328[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1331[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1331[39m[31m:[39m[33mC39[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1331[39m[31m:[39m[33mC96[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC37[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC91[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC145[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC235[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1337[39m[31m:[39m[33mC181[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1338[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1338[39m[31m:[39m[33mC41[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1338[39m[31m:[39m[33mC99[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1339[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1343[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1346[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1349[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1352[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1375[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1376[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1380[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1380[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL1396[39m[31m:[39m[33mC26[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1396[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1404[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1407[39m[31m:[39m[33mC69[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1407[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1407[39m[31m:[39m[33mC26[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1412[39m[31m:[39m[33mC25[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1412[39m[31m:[39m[33mC67[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1412[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1422[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL1446[39m[31m:[39m[33mC10[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1451[39m[31m:[39m[33mC11[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1486[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1489[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1493[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1501[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1519[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1531[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1534[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1535[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1538[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1544[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1552[39m[31m:[39m[33mC1[39m[31m][39m
+Outlines should only be modified using :focus. Use of outline: none or outline: 0 should be limited to :focus rules. (outline-none)
+[31m[[39m[33mL1552[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1562[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1566[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1566[39m[31m:[39m[33mC97[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1566[39m[31m:[39m[33mC148[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1566[39m[31m:[39m[33mC186[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1566[39m[31m:[39m[33mC46[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1570[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1578[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1626[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1644[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1650[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1653[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1676[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1679[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1688[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1691[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1694[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1698[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1715[39m[31m:[39m[33mC1[39m[31m][39m
+2 IDs in the selector, really? Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1719[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1734[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1739[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1742[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1745[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1748[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1752[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1755[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1764[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1774[39m[31m:[39m[33mC3[39m[31m][39m
+Missing standard property 'transform' to go along with '-moz-transform'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL1774[39m[31m:[39m[33mC3[39m[31m][39m
+The property -ms-transform is compatible with -moz-transform, -webkit-transform, -o-transform and should be included as well. Include all compatible vendor prefixes to reach a wider range of users. (compatible-vendor-prefixes)
+[31m[[39m[33mL1775[39m[31m:[39m[33mC3[39m[31m][39m
+Missing standard property 'transform' to go along with '-webkit-transform'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL1776[39m[31m:[39m[33mC3[39m[31m][39m
+Missing standard property 'transform' to go along with '-o-transform'. When using a vendor-prefixed property, make sure to include the standard one. (vendor-prefix)
+[31m[[39m[33mL1783[39m[31m:[39m[33mC12[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL1799[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1842[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL1890[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1907[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1924[39m[31m:[39m[33mC12[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1924[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1929[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1932[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1936[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1939[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1943[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL1946[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2016[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2026[39m[31m:[39m[33mC3[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL2028[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2040[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2040[39m[31m:[39m[33mC1[39m[31m][39m
+Missing vendor-prefixed CSS gradients for Old Webkit (Safari 4+, Chrome). When using a vendor-prefixed gradient, make sure to use them all. (gradients)
+[31m[[39m[33mL2053[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2059[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2065[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2067[39m[31m:[39m[33mC9[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2071[39m[31m:[39m[33mC8[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2081[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2084[39m[31m:[39m[33mC32[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2084[39m[31m:[39m[33mC35[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2091[39m[31m:[39m[33mC35[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2091[39m[31m:[39m[33mC32[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2142[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2148[39m[31m:[39m[33mC1[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2154[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2159[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2164[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2189[39m[31m:[39m[33mC5[39m[31m][39m
+Fallback background (hex or RGB) should precede RGBA background. For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color. (fallback-colors)
+[31m[[39m[33mL2202[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2205[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2211[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2216[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2219[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2222[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2235[39m[31m:[39m[33mC18[39m[31m][39m
+Values of 0 shouldn't have units specified. You don't need to specify units when a value is 0. (zero-units)
+[31m[[39m[33mL2246[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[31m[[39m[33mL2249[39m[31m:[39m[33mC3[39m[31m][39m
+Don't use IDs in selectors. Selectors should not contain IDs. (ids)
+[33mWarning: Task "csslint:all" failed. [4mUsed --force, continuing.[24m[39m
+
+[4mRunning "concurrent:default" (concurrent) task[24m
+[4mRunning "watch" task[24m
+Waiting...
+[4mRunning "nodemon:dev" (nodemon) task[24m
+[33m[nodemon] v1.2.1[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: app/views/**/*.* gruntfile.js server.js config/**/*.js app/**/*.js[39m
+[32m[nodemon] starting `node --debug server.js`[39m
+
+[0m
+MEAN.JS application started on port 3000
+
+[36mReloading watch config...[39m
+
+[4mRunning "watch" task[24m
+Waiting...
+[32m>> [39mFile "gruntfile.js" changed.
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node --debug server.js`[39m
+
+[0m
+Terminate batch job (Y/N)? Terminate batch job (Y/N)? 
+
+C:\Tiago\FEUP\LDSO>

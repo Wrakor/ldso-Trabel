@@ -4,14 +4,16 @@
  * Module dependencies.
  */
 var should = require('should'),
+  assert = require('assert'),
 	mongoose = require('mongoose'),
-	User = mongoose.model('User');
+	User = mongoose.model('User'),
+	Message = mongoose.model('Message');
 
 /**
  * Globals
  */
-var user, user2;
-
+var user, user2, user3, message,
+users = require('../../app/controllers/users');
 /**
  * Unit tests
  */
@@ -22,7 +24,6 @@ describe('User Model Unit Tests:', function() {
 			lastName: 'Name',
 			displayName: 'Full Name',
 			email: 'test@test.com',
-			username: 'username',
 			password: 'password',
 			provider: 'local'
 		});
@@ -31,7 +32,14 @@ describe('User Model Unit Tests:', function() {
 			lastName: 'Name',
 			displayName: 'Full Name',
 			email: 'test@test.com',
-			username: 'username',
+			password: 'password',
+			provider: 'local'
+		});
+		user3 = new User({
+			firstName: 'Full',
+			lastName: 'Name',
+			displayName: 'Full Name',
+			email: 'invalid@EMAIL',
 			password: 'password',
 			provider: 'local'
 		});
@@ -59,9 +67,16 @@ describe('User Model Unit Tests:', function() {
 			});
 		});
 
-		it('should be able to show an error when try to save without first name', function(done) {
-			user.firstName = '';
+		it('should be able to show an error when try to save without email', function(done) {
+			user.email = '';
 			return user.save(function(err) {
+				should.exist(err);
+				done();
+			});
+		});
+
+		it('should be able to show an error when try to save with invalid email', function(done) {
+			return user3.save(function(err) {
 				should.exist(err);
 				done();
 			});
