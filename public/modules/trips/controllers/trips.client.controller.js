@@ -235,7 +235,6 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 			$scope.deleteMarker = function(index) {
 				$scope.trip.markers.splice(index, 1);
 				$scope.init(); //need to re-init (bounds cant be "un-extended")
-				//TODO: optimizar (lento a mandar)
 				$scope.updateTrip();
 			};
 
