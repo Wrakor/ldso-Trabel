@@ -9,7 +9,8 @@
   color: gray;
 }
 
-.privacyToggle {
+.privacyToggle,
+.sidebar-menu-item {
   cursor:pointer;
 }
 

@@ -1,16 +1,14 @@
 <div data-ng-controller="TripsController" data-ng-init="findOne()">
-<div id="sidebar-left" class="col-xs-2 col-sm-2">
-    <ul class="nav main-menu" ui-sortable="sortableOptions" ng-model="trip.markers">
-
-            <li ng-repeat="marker in trip.markers" ng-click="centerMap(trip.markers[$index])">
-                <a href>
-                    <span class="hidden-xs" >{{marker.place_name}}</span>
-                    <span  ng-click="deleteMarker($index)" ng-class="{disabled: isLoading}" class="markerdelete glyphicon glyphicon-remove"></span>
-
-                </a>
-            </li>
-
-    </ul>
+<div id="sidebar-left" class="col-xs-12 col-sm-2">
+  <p ng-hide="trip.markers.length"></p>
+  <ul class="nav main-menu" ui-sortable="sortableOptions" ng-model="trip.markers">
+    <li class="sidebar-menu-item" ng-repeat="marker in trip.markers" ng-click="centerMap(trip.markers[$index])">
+        <a ng-click="centerMap(trip.markers[$index])">
+            <span>{{marker.place_name}}</span>
+            <span ng-click="deleteMarker($index)" ng-class="{disabled: isLoading}" class="markerdelete glyphicon glyphicon-remove"></span>
+        </a>
+    </li>
+  </ul>
 </div>
 
 
@@ -62,106 +60,17 @@
                 <input class="form-control searchbox" type="text" placeholder="Search Box">
             </div>
         </script>
-        <div class="trip-container">
-
-            <div class="col-md-9">
-
-                <p style="text-align:right;margin-top:5px;font-size:24px;">
-                    <a href ng-click="resetMap()" tooltip="Reload Map" tooltip-placement="left">
-                        <span class="glyphicon glyphicon-repeat"></span>
-                    </a>
-                </p>
-            </div>
-            <div class="pull-left">
-                <a class="btn btn-primary" data-ng-click="returnToTripView()" tooltip="Back to Trip View">
-                    <i class="glyphicon glyphicon-arrow-left"></i>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</div>
-</div>
-<!--<section data-ng-controller="TripsController" data-ng-init="findOne()">
-  <p class="loadBar" ng-show="isLoading">
-    <em>Loading...</em>
-  </p>
-  <div class="page-header">
-    <h1 class="editable" onaftersave="trip.$update()" editable-text="trip.name" tooltip="Click to change name">{{trip.name}}</h1>
-    <div class="privacyToggle" ng-switch on="trip.privacy" ng-click="togglePrivacy()" ng-class="{disabled: isLoading}" tooltip="Click to change Privacy" tooltip-placement="right">
-      <p ng-switch-when="1" class="text-muted" >Public Trip</p>
-      <p ng-switch-when="0" class="text-muted" >Private Trip</p>
-    </div>
-    <div class="member_options">
-      <p class="trip_owner">Owned by {{trip.user.displayName}}</p>
-      <ul class="trip_members">
-        <li ng-repeat="member in trip.members">{{member.user.displayName}}</li>
-      </ul>
-      <a href ng-click="AddMate()">
-        <span>Add a tripmate</span>
-      </a>
-    </div>
-    <div class="trip_dates">
-      <p>Starts on
-        <span onaftersave="trip.$update()" editable-bsdate="trip.startDate" e-datepicker-popup="dd-MMMM-yyyy">{{ (trip.startDate | date:"dd/MM/yyyy") || 'empty' }}
-        </span></p>
-      <p>Ends on
-        <span onaftersave="trip.$update()" editable-bsdate="trip.endDate" e-datepicker-popup="dd-MMMM-yyyy">{{ (trip.endDate | date:"dd/MM/yyyy") || 'empty' }}
-        </span></p>
-    </div>
-  </div>
-  <script type="text/ng-template" id="searchbox.tpl.html">
-    <div class="form-group">
-      <input class="form-control searchbox" type="text" placeholder="Search Box">
-    </div>
-  </script>
-  <div class="trip-container">
-<<<<<<< HEAD
-
-=======
-    <div class="col-md-3 markers-list">
-      <h2 ng-show="trip.markers.length===0" class="marker-placeholder text-muted">No markers yet</h2>
-      <div ui-sortable="sortableOptions" ng-model="trip.markers">
-        <div class="markeritem" ng-repeat="marker in trip.markers">
-          <a href ng-click="centerMap(trip.markers[$index])">
-            <span>{{marker.place_name}}</span>
-          </a>
-          <p>From
-            <span onaftersave="trip.$update()"
-                  editable-bsdate="marker.start"
-                  e-datepicker-popup="dd-MMMM-yyyy">{{ (marker.start | date:"dd/MM/yyyy") || 'empty' }}
-            </span>
-            to
-            <span onaftersave="trip.$update()"
-                  editable-bsdate="marker.end"
-                  e-datepicker-popup="dd-MMMM-yyyy">{{ (marker.end | date:"dd/MM/yyyy") || 'empty' }}
-            </span>
+        <div>
+          <div class="pull-left">
+            <a class="btn btn-primary" data-ng-click="returnToTripView()" tooltip="Back to Trip View">
+              <i class="glyphicon glyphicon-arrow-left"></i>
+            </a>
+          </div>
+          <p style="text-align:right;margin-top:5px;font-size:24px;">
+            <a href ng-click="resetMap()" tooltip="Reload Map" tooltip-placement="left">
+                <span class="glyphicon glyphicon-repeat"></span>
+            </a>
           </p>
-          <a href ng-click="deleteMarker($index)" ng-class="{disabled: isLoading}">
-            <span class="markerdelete glyphicon glyphicon-remove"></span>
-          </a>
         </div>
-      </div>
     </div>
->>>>>>> US008
-    <div class="col-md-9">
-      <ui-gmap-google-map center="map.center" zoom="map.zoom" events="map.events" control="map.object">
-        <ui-gmap-search-box template="searchbox.template" position="searchbox.position" events="searchbox.events"/>
-        <ui-gmap-markers models="trip.markers" idkey="'place_id'" coords="'location'" events="markers.events" />
-      </ui-gmap-google-map>
-      <p style="text-align:right;margin-top:5px;font-size:24px;">
-        <a href ng-click="resetMap()" tooltip="Reload Map" tooltip-placement="left">
-          <span class="glyphicon glyphicon-repeat"></span>
-        </a>
-      </p>
-    </div>
-	<div class="pull-left">
-		<a class="btn btn-primary" data-ng-click="returnToTripView()" tooltip="Back to Trip View">
-			<i class="glyphicon glyphicon-arrow-left"></i>
-		</a>
-	</div>
-   <div timeline="timeline_data"
-     timeline-options="timeline_options"
-     timeline-selection="timeline_selection"></div>
-  </div>
-</section> -->
+</div>

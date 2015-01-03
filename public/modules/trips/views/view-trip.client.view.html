@@ -88,58 +88,6 @@
 		</div>
 	</div>
 </div>
-<!--<section data-ng-controller="TripsController" data-ng-init="findOne()">
-	<div class="page-header">
-		<h1 data-ng-bind="trip.name"></h1>
-		<div ng-switch on="trip.privacy">
-			<p ng-switch-when="1" class="text-muted">Public Trip</p>
-			<p ng-switch-when="0" class="text-muted">Private Trip</p>
-		</div>
-	</div>
-	<div class="page-content">
-		<ui-gmap-google-map center="map.center" zoom="map.zoom" events="map.events" control="map.object">
-			<ui-gmap-markers models="trip.markers" idkey="'place_id'" coords="'location'" events="markers.events" />
-		</ui-gmap-google-map>
-		<p style="text-align:right;margin-top:5px;font-size:24px;">
-			<a href ng-click="resetMap()" tooltip="Reload Map">
-				<span class="glyphicon glyphicon-repeat"></span>
-			</a>
-		</p>
-	</div>
-
-	<div class="pull-right">
-		<span data-ng-show="hasPermission()">
-			<a class="btn btn-primary" data-ng-click="leaveTrip();" data-ng-show="isTripMember()" tooltip="Leave this trip">
-				<i class="glyphicon glyphicon-remove"></i>
-			</a>
-			<a class="btn btn-primary" href="/#!/trips/{{trip._id}}/edit" tooltip="Edit">
-				<i class="glyphicon glyphicon-edit"></i>
-			</a>
-			<a class="btn btn-primary" data-ng-click="remove();" data-ng-show="isOwner()" tooltip="Delete">
-				<i class="glyphicon glyphicon-trash"></i>
-			</a>
-		</span>
-		<span data-ng-show="hasPermission()===false">
-			<a class="btn btn-primary" data-ng-click="requestToJoin();" tooltip="Request to join trip">
-				<i class="glyphicon glyphicon-upload"></i>
-			</a>
-		</span>
-		<span>
-			<a class="btn btn-primary" data-ng-click="cloneTrip();" tooltip="Clone this trip">
-				<i class="glyphicon glyphicon-file"></i>
-			</a>
-		</span>
-	</div>
-
-	<small>
-	<em class="text-muted">
-		Posted on
-		<span data-ng-bind="trip.created | date:'mediumDate'"></span>
-		by
-		<span data-ng-bind="trip.user.displayName"></span>
-	</em>
-	</small>
-
 	<!--
 	http://lukasz-zak.github.io/disqus-here/
 	-->
@@ -152,4 +100,3 @@
 	  data-width="450"
 	  data-show-faces="true">
 	</div>-->
-
