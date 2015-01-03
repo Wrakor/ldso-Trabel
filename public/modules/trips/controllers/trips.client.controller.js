@@ -106,7 +106,10 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 			$scope.trip = Trips.get({
 				tripId: $stateParams.tripId
 			},function(data) { //this runs after trip is loaded
-				$scope.init();
+				//fix error when running tests
+				if (typeof $scope.init === 'function') {
+					$scope.init();
+				}
 			});
 		};
 
@@ -293,7 +296,7 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 				addCurrentMarkersToTimeline();
 				$scope.timeline_options.start = $scope.trip.startDate;
 				$scope.timeline_options.end = $scope.trip.endDate;
-				console.log($scope.timeline_options);		
+				console.log($scope.timeline_options);
 
 				var map = $scope.map.object.getGMap();
 				$scope.bounds = new maps.LatLngBounds();

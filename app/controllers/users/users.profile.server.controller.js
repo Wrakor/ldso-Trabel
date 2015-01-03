@@ -194,8 +194,7 @@ function messageBuilder(req){
 exports.addReceivedMessage = function(req, res, next){
 
 	var message = messageBuilder(req);
-	console.log(message);
-
+	//console.log(message);
 
 	req.noLogin = true;
 	User.findById(req.profile._id).exec(function(err, user){
@@ -216,7 +215,7 @@ exports.addReceivedMessage = function(req, res, next){
 exports.addSentMessage = function(req, res, next){
 
 	var message = messageBuilder(req);
-	console.log(message);
+	//console.log(message);
 
 
 	User.findById(req.user._id).exec(function(err, user){

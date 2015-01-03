@@ -7,7 +7,7 @@ angular.module(ApplicationConfiguration.applicationModuleName, ApplicationConfig
 angular.module(ApplicationConfiguration.applicationModuleName).config(['$locationProvider',
 	function($locationProvider) {
 		$locationProvider.hashPrefix('!');
-    new WOW().init();
+   // new WOW().init();
    
 	}
 
