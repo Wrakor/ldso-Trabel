@@ -183,7 +183,7 @@ a.show-sidebar:hover {
 }
 #main {
   margin-top: 50px;
-  min-height: 800px;
+  min-height: 700px;
   overflow: hidden;
 }
 #search {
@@ -1252,7 +1252,6 @@ ul.DTTT_dropdown.dropdown-menu > li:hover > a {
   color: #000;
 }
 .form-control {
-  height: 26px;
   padding: 2px 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
