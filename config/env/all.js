@@ -65,7 +65,6 @@ module.exports = {
 		},
 		css: [
 			'public/modules/**/css/*.css',
-			'public/modules/core/css/landing/*.css',
 			'public/css/*.css'
 		],
 		js: [
