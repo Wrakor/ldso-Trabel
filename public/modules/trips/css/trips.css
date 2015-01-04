@@ -38,7 +38,8 @@ h1.editable:hover {
   margin-bottom: 1em;
 }
 
-.markerdelete {
+.markerdelete,
+.markerclosePOI {
   float:right;
 }
 

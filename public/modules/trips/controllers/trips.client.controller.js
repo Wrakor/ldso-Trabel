@@ -304,6 +304,26 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 				}
 			};
 
+			$scope.closestPOI = function(marker) {
+				var fourSquareQuery;
+				console.log(marker);
+				if(marker.viewport) {
+					var viewport = makeViewport(marker.viewport);
+					fourSquareQuery = 'ne=' + viewport.getNorthEast().lat + ',' + viewport.getNorthEast().lng +
+					'&sw=' + viewport.getSouthWest().lat + ',' + viewport.getSouthWest().lng;
+				}
+				else
+					fourSquareQuery = 'll=' + marker.getPosition().lat() + ',' + marker.getPosition().lng()+'&radius=800';
+
+				$http.get('https://api.foursquare.com/v2/venues/search?client_id=H2LVVK045LCEOM235LT5GBAA3HGETTMNPRMYN23Y4EGSQGVX&client_secret=QZSL0O3ZKLZNH4XJ5I5SJNRR2W4L5YUNMFNEUY52XXG44MLT&v=20130815&intent=browse&'+fourSquareQuery+'&query=sushi').
+				success(function(data, status, headers, config) {
+					console.log(data.response.venues);
+				}).
+				error(function(data, status, headers, config) {
+					alert('Error getting data from Foursquare');
+				});
+			};
+
 			$scope.init = function() {
 
 				addCurrentMarkersToTimeline();
