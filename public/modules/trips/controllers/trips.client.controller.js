@@ -1,8 +1,8 @@
 'use strict';
 
 // Trips controller
-angular.module('trips').controller('TripsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Trips', 'uiGmapGoogleMapApi', 'ngDialog', '$http',
-	function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http) {
+angular.module('trips').controller('TripsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Trips', 'uiGmapGoogleMapApi', 'ngDialog', '$http',  'SweetAlert',
+	function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http, SweetAlert) {
 		$scope.authentication = Authentication;
 
 		$scope.map = {
@@ -196,17 +196,32 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 					}
 				};
 				//TODO: save in different collection
-				//TODO: dont allow duplicates
-				var exists = false;
-				$scope.trip.markers.forEach(function(marker) {
-					if(marker.place_id === place.place_id)
-						exists = true;
-				});
-				if(!exists) {
+				//TODO: should we allow this?
+				var ALLOWDUPES = true;
+				var exists;
+				if(!ALLOWDUPES) {
+					exists = false;
+					$scope.trip.markers.forEach(function(marker) {
+						if(marker.place_id === place.place_id) {
+							exists = true;
+							SweetAlert.swal('No duplicate points allowed', '', 'error');
+						}
+					});
+				}
+				if(ALLOWDUPES || !exists) {
 					if(place.geometry.viewport)
 					{
-						marker.viewport = place.geometry.viewport;
-						$scope.bounds.union(place.geometry.viewport);
+						marker.viewport = {
+							northeast: {
+								latitude: place.geometry.viewport.getNorthEast().lat(),
+								longitude: place.geometry.viewport.getNorthEast().lng()
+							},
+							southwest: {
+								latitude: place.geometry.viewport.getSouthWest().lat(),
+								longitude: place.geometry.viewport.getSouthWest().lng()
+							}
+						};
+						$scope.bounds.union(makeViewport(marker.viewport));
 					}
 					else
 						$scope.bounds.extend(place.geometry.location);
@@ -222,9 +237,7 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 			$scope.centerMap = function(marker) {
 				var map = $scope.map.object.getGMap();
 				if(marker.viewport)
-				{
 					map.fitBounds(makeViewport(marker.viewport));
-				}
 				else {
 					map.setCenter(
 						{
@@ -274,12 +287,12 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 			function makeViewport(obj) {
 				return new maps.LatLngBounds(
 					new maps.LatLng(
-						obj.Ea.k,
-						obj.va.j
+						obj.southwest.latitude,
+						obj.southwest.longitude
 					),
 					new maps.LatLng(
-						obj.Ea.j,
-						obj.va.k
+						obj.northeast.latitude,
+						obj.northeast.longitude
 					));
 			}
 
