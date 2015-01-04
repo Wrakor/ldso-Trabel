@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('users').controller('AuthenticationController', ['$scope', '$http', '$location', 'Authentication',
-	function($scope, $http, $location, Authentication) {
+angular.module('users').controller('AuthenticationController', ['$scope', '$http', '$location', 'Authentication', 'SweetAlert',
+	function($scope, $http, $location, Authentication, SweetAlert) {
 		$scope.authentication = Authentication;
 
 		// If user is signed in then redirect back home
@@ -16,7 +16,12 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$http
 				//$location.path('/');
 
 				$scope.credentials = null;
-				$scope.success = response.message;
+				//$scope.success = response.message;
+
+				SweetAlert.swal("Success!", "An email has been sent with further instructions", "success");
+				$location.path('/');
+				
+				
 			}).error(function(response) {
 				$scope.error = response.message;
 			});

@@ -71,6 +71,20 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 
 		// Remove existing Trip
 		$scope.remove = function( trip ) {
+			
+			SweetAlert.swal({
+			   title: "Are you sure?",
+			   text: "Your will not be able to recover this trip!",
+			   type: "warning",
+			   showCancelButton: true,
+			   confirmButtonColor: "#DD6B55",
+			   confirmButtonText: "Yes, delete it!"
+			}, 
+			function(confirm){ 
+			   if (confirm) {
+				   SweetAlert.swal("Deleted!");
+				
+			
 			if ( trip ) { trip.$remove();
 
 				for (var i in $scope.trips ) {
@@ -83,7 +97,8 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 					$location.path('trips');
 				});
 			}
-		};
+				}
+		})};
 
 		// Update existing Trip
 		$scope.update = function() {
