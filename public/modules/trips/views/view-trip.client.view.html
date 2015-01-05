@@ -1,107 +1,106 @@
 <div data-ng-controller="TripsController" data-ng-init="findOne()">
-	<div id="content" class="col-xs-12 col-sm-12">
+  <div id="content" class="col-xs-12 col-sm-12">
 
-		<div class="preloader" style="display: none;">
-			<img src="img/devoops_getdata.gif" class="devoops-getdata" alt="preloader">
-		</div>
-		<div id="ajax-content">
-			<div class="row">
-				<div id="breadcrumb" class="col-xs-12" style="margin-bottom: 0px;">
-					<ol class="breadcrumb pull-left">
-						<li><a data-ng-bind="trip.name"></a></li>
-					</ol>
-					<div id="social" class="pull-right" ng-switch on="trip.privacy">
-						<a ng-switch-when="1">Public Trip</a>
-						<a ng-switch-when="0">Private Trip</a>
+    <div class="preloader" style="display: none;">
+      <img src="img/devoops_getdata.gif" class="devoops-getdata" alt="preloader">
+    </div>
+    <div id="ajax-content">
+      <div class="row">
+        <div id="breadcrumb" class="col-xs-12" style="margin-bottom: 0px;">
+          <ol class="breadcrumb pull-left">
+            <li>
+              <a data-ng-bind="trip.name"></a>
+            </li>
+          </ol>
+          <div id="social" class="pull-right" ng-switch on="trip.privacy">
+            <a ng-switch-when="1">Public Trip</a>
+            <a ng-switch-when="0">Private Trip</a>
 
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
-					<div class="box">
-						<ui-gmap-google-map center="map.center" zoom="map.zoom" events="map.events" control="map.object">
-							<ui-gmap-search-box template="searchbox.template" position="searchbox.position" events="searchbox.events"/>
-							<ui-gmap-markers models="trip.markers" idkey="'place_id'" coords="'location'" events="markers.events" />
-						</ui-gmap-google-map>
-					</div>
-				</div>
-			</div>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+          <div class="box">
+            <ui-gmap-google-map center="map.center" zoom="map.zoom" events="map.events" control="map.object">
+              <ui-gmap-search-box template="searchbox.template" position="searchbox.position" events="searchbox.events" />
+              <ui-gmap-markers models="trip.markers" idkey="'place_id'" coords="'location'" events="markers.events" />
+            </ui-gmap-google-map>
+          </div>
+        </div>
+      </div>
 
 
 
-		<div class="page-content">
-			<p style="text-align:right;margin-top:5px;font-size:24px;">
-				<a href ng-click="resetMap()" tooltip="Reload Map">
-					<span class="glyphicon glyphicon-repeat"></span>
-				</a>
-			</p>
-		</div>
+      <div class="page-content">
+        <p style="text-align:right;margin-top:5px;font-size:24px;">
+          <a href ng-click="resetMap()" tooltip="Reload Map">
+            <span class="glyphicon glyphicon-repeat"></span>
+          </a>
+        </p>
+      </div>
 
-		<div class="pull-right">
-		<span data-ng-show="hasPermission()">
-			<a class="btn btn-primary" data-ng-click="leaveTrip();" data-ng-show="isTripMember()" tooltip="Leave this trip">
-				<i class="glyphicon glyphicon-remove"></i>
-			</a>
-			<a class="btn btn-primary" href="/#!/trips/{{trip._id}}/edit" tooltip="Edit">
-				<i class="glyphicon glyphicon-edit"></i>
-			</a>
-			<a class="btn btn-primary" data-ng-click="remove();" data-ng-show="isOwner()" tooltip="Delete">
-				<i class="glyphicon glyphicon-trash"></i>
-			</a>
-		</span>
-		<span data-ng-show="hasPermission()===false">
-			<a class="btn btn-primary" data-ng-click="requestToJoin();" tooltip="Request to join trip">
-				<i class="glyphicon glyphicon-upload"></i>
-			</a>
-		</span>
-		<span>
-			<a class="btn btn-primary" data-ng-click="cloneTrip();" tooltip="Clone this trip">
-				<i class="glyphicon glyphicon-file"></i>
-			</a>
-		</span>
-		</div>
-					
-		<small>
-			<button ng-click="likeTrip()" tooltip="Like this trip"> 
-				<img src="/modules/trips/img/thumbs-up-icon.png" style="max-width: 25px"> 
-			</button>
-			<span ng-if="trip.likes == 0"> No one liked this trip yet! </span>
-			<span ng-if="trip.likes > 0 && alreadyLiked == 0"> {{trip.likes}} liked this trip! </span> 
-			<span ng-if="trip.likes == 1 && alreadyLiked == 1"> You liked this trip! </span> 
-			<span ng-if="trip.likes > 1 && alreadyLiked == 1"> You and {{trip.likes}} other(s) liked this trip! </span><br>
-			
-			<em class="text-muted">
-				Posted on
-				<span data-ng-bind="trip.created | date:'mediumDate'"></span>
-				by
-				<span data-ng-bind="trip.user.displayName"></span>
-			</em>
-		</small>
+      <div class="pull-right">
+        <span data-ng-show="hasPermission()">
+          <a class="btn btn-primary" data-ng-click="leaveTrip();" data-ng-show="isTripMember()" tooltip="Leave this trip">
+            <i class="glyphicon glyphicon-remove"></i>
+          </a>
+          <a class="btn btn-primary" href="/#!/trips/{{trip._id}}/edit" tooltip="Edit">
+            <i class="glyphicon glyphicon-edit"></i>
+          </a>
+          <a class="btn btn-primary" data-ng-click="remove();" data-ng-show="isOwner()" tooltip="Delete">
+            <i class="glyphicon glyphicon-trash"></i>
+          </a>
+        </span>
+        <span data-ng-show="hasPermission()===false">
+          <a class="btn btn-primary" data-ng-click="requestToJoin();" tooltip="Request to join trip">
+            <i class="glyphicon glyphicon-upload"></i>
+          </a>
+        </span>
+        <span>
+          <a class="btn btn-primary" data-ng-click="cloneTrip();" tooltip="Clone this trip">
+            <i class="glyphicon glyphicon-file"></i>
+          </a>
+        </span>
+      </div>
 
-		<!--
+      <small>
+        <button ng-class="{disabled: isLoading}" ng-click="likeTrip()" tooltip="Like this trip">
+          <img src="/modules/trips/img/thumbs-up-icon.png" style="max-width: 25px">
+        </button>
+        <span ng-if="trip.likes == 0"> No one liked this trip yet! </span>
+        <span ng-if="trip.likes > 0 && alreadyLiked == 0"> {{trip.likes}} liked this trip! </span>
+        <span ng-if="trip.likes == 1 && alreadyLiked == 1"> You liked this trip! </span>
+        <span ng-if="trip.likes > 1 && alreadyLiked == 1"> You and {{trip.likes}} other(s) liked this trip! </span>
+        <br>
+
+        <em class="text-muted">
+          Posted on
+          <span data-ng-bind="trip.created | date:'mediumDate'"></span>
+          by
+          <span data-ng-bind="trip.user.displayName"></span>
+        </em>
+      </small>
+
+      <!--
         http://lukasz-zak.github.io/disqus-here/
         -->
-		<disqus-here shortname="ldsotrabel" identifier="{{disqus.tripID}}" title="{{disqus.tripID}}" url="{{disqus.url}}">
-		</disqus-here>
+      <disqus-here shortname="ldsotrabel" identifier="{{disqus.tripID}}" title="{{disqus.tripID}}" url="{{disqus.url}}">
+      </disqus-here>
 
-		<div
-				class="fb-like"
-				data-share="true"
-				data-width="450"
-				data-show-faces="true">
-		</div>
-	</div>
-</div>
-	<!--
+      <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+      </div>
+    </div>
+  </div>
+  <!--
 	http://lukasz-zak.github.io/disqus-here/
 	-->
-	<disqus-here shortname="ldsotrabel" identifier="{{disqus.tripID}}" title="{{disqus.tripID}}" url="{{disqus.url}}">
-	</disqus-here>
-
-<!--	<div
+  <disqus-here shortname="ldsotrabel" identifier="{{disqus.tripID}}" title="{{disqus.tripID}}" url="{{disqus.url}}">
+  </disqus-here>
+</div>
+  <!--	<div
 	  class="fb-like"
 	  data-share="true"
 	  data-width="450"

@@ -1,634 +1,574 @@
 <section data-ng-controller="LandingController">
-  <link rel="stylesheet" href="/modules/core/css/landing/landing_page.css"/>
-  <link rel="stylesheet" href="/modules/core/css/landing/index.css"/>
+  <link rel="stylesheet" href="/modules/core/css/landing/landing_page.css" />
+  <link rel="stylesheet" href="/modules/core/css/landing/index.css" />
 
-    <!-- Navigation
-    <nav class="navbar navbar-trn navbar-fixed-top" role="navigation" id="navbarSettings">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Dragon<span class="text-primary">fly</span></a>
-        </div>
+  <!-- Navigation
+  <nav class="navbar navbar-trn navbar-fixed-top" role="navigation" id="navbarSettings">
+  <div class="container">
+  <div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">Dragon<span class="text-primary">fly</span></a>
+</div>
 
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right ">
+<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right ">
 
-                <!--Home Pages
-                <li class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Home
-                    </a>
-                    <ul class="dropdown-menu ">
-                        <li>
-                            <a href="index.php">Home - Option 1</a>
-                        </li>
+<!--Home Pages
+<li class="dropdown">
+<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Home
+</a>
+<ul class="dropdown-menu ">
+<li>
+<a href="index.php">Home - Option 1</a>
+</li>
 
-                        <li>
-                            <a href="index-2.php">Home - Option 2</a>
-                        </li>
-                    </ul>
-                </li>
+<li>
+<a href="index-2.php">Home - Option 2</a>
+</li>
+</ul>
+</li>
 
-                <!--Pages
-                <li class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Pages</a>
+<!--Pages
+<li class="dropdown">
+<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Pages</a>
 
-                    <ul class="dropdown-menu">
+<ul class="dropdown-menu">
 
-                        <!-- About Pages
-                        <li class="dropdown-submenu">
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">About Pages</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="about-us-v1.php">About Us I</a>
-                                </li>
-                                <li>
-                                    <a href="about-us-v2.php">About Us II</a>
-                                </li>
-                                <li>
-                                    <a href="about-us-v3.php">About Us III</a>
-                                </li>
-                            </ul>
-                        </li>
+<!-- About Pages
+<li class="dropdown-submenu">
+<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">About Pages</a>
+<ul class="dropdown-menu">
+<li>
+<a href="about-us-v1.php">About Us I</a>
+</li>
+<li>
+<a href="about-us-v2.php">About Us II</a>
+</li>
+<li>
+<a href="about-us-v3.php">About Us III</a>
+</li>
+</ul>
+</li>
 
-                        <li class="dropdown-submenu">
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Services Pages</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="services-v1.php">Services I</a>
-                                </li>
-                                <li>
-                                    <a href="services-v2.php">Services II</a>
-                                </li>
-                                <li>
-                                    <a href="services-v3.php">Services III</a>
-                                </li>
-                            </ul>
-                        </li>
+<li class="dropdown-submenu">
+<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Services Pages</a>
+<ul class="dropdown-menu">
+<li>
+<a href="services-v1.php">Services I</a>
+</li>
+<li>
+<a href="services-v2.php">Services II</a>
+</li>
+<li>
+<a href="services-v3.php">Services III</a>
+</li>
+</ul>
+</li>
 
-                        <li>
-                            <a href="pricing-tables.php">Pricing Tables</a>
-                        </li>
+<li>
+<a href="pricing-tables.php">Pricing Tables</a>
+</li>
 
-                        <li>
-                            <a href="contact.php">Contact</a>
-                        </li>
+<li>
+<a href="contact.php">Contact</a>
+</li>
 
-                        <li>
-                            <a href="support.php">Support</a>
-                        </li>
+<li>
+<a href="support.php">Support</a>
+</li>
 
-                        <li>
-                            <a href="our-team.php">Our Team</a>
-                        </li>
+<li>
+<a href="our-team.php">Our Team</a>
+</li>
 
-                        <li>
-                            <a href="sign-in.php">Sign In</a>
-                        </li>
-                        <li>
-                            <a href="sign-up.php">Sign Up</a>
-                        </li>
+<li>
+<a href="sign-in.php">Sign In</a>
+</li>
+<li>
+<a href="sign-up.php">Sign Up</a>
+</li>
 
-                        <li>
-                            <a href="404.php">404 Error </a>
-                        </li>
-
-
-                    </ul>
-                </li>
-
-                <!--Portfolio
-                <li class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Portfolio
-                    </a>
-                    <ul class="dropdown-menu ">
-                        <li>
-                            <a href="portfolio-v1.php">Portfolio Filter I</a>
-                        </li>
-
-                        <li>
-                            <a href="portfolio-v2.php">Portfolio Filter II</a>
-                        </li>
-                        <li>
-                            <a href="portfolio-v3.php">Portfolio Page III</a>
-                        </li>
-
-                        <li class="divider"></li>
-
-                        <li>
-                            <a href="portfolio-item-v1.php">Portfolio Item I</a>
-                        </li>
-
-                        <li>
-                            <a href="portfolio-item-v2.php">Portfolio Item II</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Blog
-                <li class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Blog
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="blog-page.php">Blog Page</a>
-                        </li>
-                        <li>
-                            <a href="blog-item.php">Blog Item</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!--Get Started
-                <li class="dropdown">
-                    <a href="get-started/index.php" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Get Started
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="get-started/index.php">How to Start - Docs</a>
-                        </li>
-                        <li>
-                            <a href="get-started/elements.php#here">Elements - Blocks of Code</a>
-                        </li>
-                        <li>
-                            <a href="get-started/changelog.php#here">Changelog</a>
-                        </li>
-                        <li>
-                            <a href="get-started/php-tutorial.php#here">PHP Tutorial</a>
-                        </li>
-                        <li>
-                            <a href="get-started/license-and-credits.php#here">Licence &amp; Credits</a>
-                        </li>
-                    </ul>
-                </li>
+<li>
+<a href="404.php">404 Error </a>
+</li>
 
 
-                <!-- Sidebar
-                <li class="dropdown hidden-xs">
-                    <a href="javascript:void(0);" id="sidebar-btn">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
+</ul>
+</li>
 
-            </ul>
-        </div>
-        <!-- /.navbar-collapse
-    </div>
+<!--Portfolio
+<li class="dropdown">
+<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Portfolio
+</a>
+<ul class="dropdown-menu ">
+<li>
+<a href="portfolio-v1.php">Portfolio Filter I</a>
+</li>
+
+<li>
+<a href="portfolio-v2.php">Portfolio Filter II</a>
+</li>
+<li>
+<a href="portfolio-v3.php">Portfolio Page III</a>
+</li>
+
+<li class="divider"></li>
+
+<li>
+<a href="portfolio-item-v1.php">Portfolio Item I</a>
+</li>
+
+<li>
+<a href="portfolio-item-v2.php">Portfolio Item II</a>
+</li>
+</ul>
+</li>
+
+<!-- Blog
+<li class="dropdown">
+<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Blog
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="blog-page.php">Blog Page</a>
+</li>
+<li>
+<a href="blog-item.php">Blog Item</a>
+</li>
+</ul>
+</li>
+
+<!--Get Started
+<li class="dropdown">
+<a href="get-started/index.php" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Get Started
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="get-started/index.php">How to Start - Docs</a>
+</li>
+<li>
+<a href="get-started/elements.php#here">Elements - Blocks of Code</a>
+</li>
+<li>
+<a href="get-started/changelog.php#here">Changelog</a>
+</li>
+<li>
+<a href="get-started/php-tutorial.php#here">PHP Tutorial</a>
+</li>
+<li>
+<a href="get-started/license-and-credits.php#here">Licence &amp; Credits</a>
+</li>
+</ul>
+</li>
+
+
+<!-- Sidebar
+<li class="dropdown hidden-xs">
+<a href="javascript:void(0);" id="sidebar-btn">
+<i class="fa fa-bars"></i>
+</a>
+</li>
+
+</ul>
+</div>
+<!-- /.navbar-collapse
+</div>
 </nav>-->
 
-<!-- If navbar is fixed to top and it has the class navbar-default or navbar-inverse this div will add space below the navbar-->
-<div id="navbarSpaceBottom"></div>
-    <!-- Introduction section -->
-    <section class="bg-13 bg-cover bg-centerTop bg-norepeat">
-        <div class="bg-filter sTop">
-            <div class="container">
-                <div class="jumbotron trn v-center">
-                    <h1 class="wow fadeInUp" data-wow-delay="0.1s">Plan your trips with Trabel</h1>
-                    <div class="space-sm"></div>
-                    <p class="wow fadeInUp" data-wow-delay="0.2s">The only place where you can easily, and collaboratively,plan your trips,
-                        <br>share them, explore what others have done, help other by rating and get inspired to join in on the fun!</p>
-                    <div class="space-sm"></div>
-                    <ul class="list-inline wow fadeInUp" data-wow-delay="0.3s">
-                        <li>
-                            <a href="#" class="btn btn-default-trn btn-xlg scroll"><i class="fa fa-bolt"></i>Get Started</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <!-- If navbar is fixed to top and it has the class navbar-default or navbar-inverse this div will add space below the navbar-->
+  <div id="navbarSpaceBottom"></div>
+  <!-- Introduction section -->
+  <section class="bg-13 bg-cover bg-centerTop bg-norepeat">
+    <div class="bg-filter sTop">
+      <div class="container">
+        <div class="jumbotron trn v-center">
+          <h1 class="wow fadeInUp" data-wow-delay="0.1s">Plan your trips with Trabel</h1>
+          <div class="space-sm"></div>
+          <p class="wow fadeInUp" data-wow-delay="0.2s">The only place where you can easily and collaboratively plan your trips,
+            <br>share them, rate them, explore what others have done, and get inspired to join in on the fun!</p>
+          <div class="space-sm"></div>
+          <ul class="list-inline wow fadeInUp" data-wow-delay="0.3s">
+            <li>
+              <a href="#!/signup" class="btn btn-default-trn btn-xlg scroll"><i class="fa fa-bolt"></i>Get Started</a>
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Features and Services section -->
+  <!-- Features and Services section -->
 
-    <div class="section-lg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1s">
-                    <div class="text-center">
-                        <i class="fa fa-tint icon-o"></i>
-                        <h3 class="text-primary">Plan</h3>
-                        <p class="text-grey">Plan your trip.
-                            <br>Do it alone, with friends or even ask random people for opinions.</p>
-                    </div>
-                    <div class="space visible-xs visible-sm"></div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.1s">
-                    <div class="text-center">
-                        <i class="fa fa-paper-plane-o icon-o"></i>
-                        <h3 class="text-primary">Share and Explore</h3>
-                        <p class="text-grey">Get inspired by what others have done.
-                            <br>Explore trips others have done and share your trips.</p>
-                    </div>
-                    <div class="space visible-xs visible-sm"></div>
-                </div>
-                <div class="col-md-3 col-sm-6  wow fadeIn" data-wow-delay="1.2s">
-                    <div class="text-center">
-                        <i class="fa fa-heart-o icon-o"></i>
-                        <h3 class="text-primary">Rate</h3>
-                        <p class="text-grey">Help other by rating trips and places.
-                            <br>Utterly disappointed or pleasantly surprised in one of your trips? Let us know!</p>
-                    </div>
-                    <div class="space visible-xs"></div>
-                </div>
-                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
-                    <div class="text-center">
-                        <i class="fa fa-sliders icon-o"></i>
-                        <h3 class="text-primary">Join the fun</h3>
-                        <p class="text-grey">Like something you've seen?
-                            <br>Why don't you ask the trip owner if you can join them?</p>
-                    </div>
-                </div>
-
-            </div>
+  <div class="section-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1s">
+          <div class="text-center">
+            <i class="fa fa-tint icon-o"></i>
+            <h3 class="text-primary">Plan</h3>
+            <p class="text-grey">Plan your trip.
+              <br>Do it alone, with friends or even ask unknown people for opinions.</p>
+          </div>
+          <div class="space visible-xs visible-sm"></div>
         </div>
 
+        <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.1s">
+          <div class="text-center">
+            <i class="fa fa-paper-plane-o icon-o"></i>
+            <h3 class="text-primary">Share and Explore</h3>
+            <p class="text-grey">Get inspired by what others have done.
+              <br>Explore trips others have done and share your trips.</p>
+          </div>
+          <div class="space visible-xs visible-sm"></div>
+        </div>
+        <div class="col-md-3 col-sm-6  wow fadeIn" data-wow-delay="1.2s">
+          <div class="text-center">
+            <i class="fa fa-heart-o icon-o"></i>
+            <h3 class="text-primary">Rate</h3>
+            <p class="text-grey">Help others by rating trips and places.
+              <br>Pleasantly surprised in one of your trips? Let us know!</p>
+          </div>
+          <div class="space visible-xs"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
+          <div class="text-center">
+            <i class="fa fa-sliders icon-o"></i>
+            <h3 class="text-primary">Join the fun</h3>
+            <p class="text-grey">Like something you've seen?
+              <br>Why don't you ask the trip owner if you can join them?</p>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <!-- about us section -->
-    <section class="bg-grey  section-lg ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="text-primary wow fadeIn" data-wow-delay="0.2s" id="responsive_headline">Who We Are</h2>
-                    <p class="text-block wow fadeIn" data-wow-delay="0.4s">
-                      A team of travel enthusiasts who could neer find the proper tool to plan their trips. So we decided to make our own.
-                    </p>
-                    <div class="space-sm visible-xs visible-sm"></div>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="text-primary wow fadeIn" data-wow-delay="0.5s">What We Believe</h2>
-                    <p class="text-block  wow fadeIn" data-wow-delay="0.7s">
-                       Travelling is more fun with friends, and even more when you get to know interesting people from all over the place. With Trabel, we want to make this as simple and easy as it  can be
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+  </div>
 
-    <div class="bg-11 bg-center bg-fixed">
-        <div class="filling-section bg-filter-v1"></div>
+  <!-- about us section -->
+  <section class="bg-grey  section-lg ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-primary wow fadeIn" data-wow-delay="0.2s" id="responsive_headline">Who We Are</h2>
+          <p class="text-block wow fadeIn" data-wow-delay="0.4s">
+            A team of travel enthusiasts who couldn't find the proper tool to plan their trips, so we decided to make our own.
+          </p>
+          <div class="space-sm visible-xs visible-sm"></div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-primary wow fadeIn" data-wow-delay="0.5s">What We Believe</h2>
+          <p class="text-block  wow fadeIn" data-wow-delay="0.7s">
+            Travelling is more fun with friends, and even more when you get to know interesting people from all over the place. With Trabel, we want to make this as simple and easy as it can be.
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
 
 
-    <!--  Gallery - portfolio  -->
-    <!--
-    <section class="bg-grey-3 section-lg">
-        <div class="container">
-            <h2 class="big-title text-center">Gallery</h2>
-            <p class="big-subtitle text-center">Curabitur bibendum justo non orci. Aenean id metus id velit ullamcorper pulvinar. Proin mattis lacinia justo. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus.</p>
-            <div class="space-sm"></div>
-            <ul class="filter-tabs">
-                <li class="filter active" data-filter="mix">All</li>
-                <li class="filter" data-filter="apps">Application</li>
-                <li class="filter" data-filter="devices">Devices</li>
-                <li class="filter" data-filter="web">Webdesign</li>
-            </ul>
+  <!--  Gallery - portfolio  -->
+  <!--
+          <section class="bg-grey-3 section-lg">
+          <div class="container">
+          <h2 class="big-title text-center">Gallery</h2>
+          <p class="big-subtitle text-center">Curabitur bibendum justo non orci. Aenean id metus id velit ullamcorper pulvinar. Proin mattis lacinia justo. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus.</p>
+          <div class="space-sm"></div>
+          <ul class="filter-tabs">
+          <li class="filter active" data-filter="mix">All</li>
+          <li class="filter" data-filter="apps">Application</li>
+          <li class="filter" data-filter="devices">Devices</li>
+          <li class="filter" data-filter="web">Webdesign</li>
+        </ul>
 
-            <ul class="row filter-grid-v2" id="Grid">
-                <!-- mix - select all, devices - filter only devices -->
-                <!-- Item 1
-                <li class="col-md-4 col-sm-6 mix devices">
-                    <a href="portfolio-item-v2.php" title="View portfolio item">
-                        <div class="hover-content  wow easePulse" data-wow-delay="0s">
-                            <img src="assets/img/sign-up-sketch.jpg" class="img-responsive" alt="Portfolio - application">
-                            <div class="top-part hidden-xs">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                            <div class="bottom-part hidden-xs">
-                                <h3>Title</h3>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Item 2
-                <li class="col-md-4 col-sm-6 mix apps web ">
-                    <a href="portfolio-item-v2.php" title="View portfolio item">
-                        <div class="hover-content wow easePulse" data-wow-delay="0.3s">
-                            <img src="assets/img/minimal-wireframe-assets.jpg" class="img-responsive" alt="Websites Layout">
-                            <div class="top-part hidden-xs">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                            <div class="bottom-part hidden-xs">
-                                <h3>Title</h3>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Item 3
-                <li class="col-md-4 col-sm-6 mix apps ">
-                    <a href="portfolio-item-v2.php" title="View portfolio item">
-                        <div class="hover-content wow easePulse" data-wow-delay="0.6s">
-                            <img src="assets/img/App-Preview.jpg" class="img-responsive" alt="Portfolio - application">
-                            <div class="top-part hidden-xs">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                            <div class="bottom-part hidden-xs">
-                                <h3>Title</h3>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Item 4
-                <li class="col-md-4 col-sm-6 mix devices ">
-                    <a href="portfolio-item-v2.php" title="View portfolio item">
-                        <div class="hover-content wow easePulse" data-wow-delay="0.3s">
-                            <img src="assets/img/macbook.jpg" class="img-responsive" alt="Apple Macbook Pro">
-                            <div class="top-part hidden-xs">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                            <div class="bottom-part hidden-xs">
-                                <h3>Title</h3>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Item 5
-                <li class="col-md-4 col-sm-6 mix web ">
-                    <a href="portfolio-item-v2.php" title="View portfolio item">
-                        <div class="hover-content wow easePulse" data-wow-delay="0.6s">
-                            <img src="assets/img/webdesign.jpg" class="img-responsive" alt="Webdesign">
-                            <div class="top-part hidden-xs">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                            <div class="bottom-part hidden-xs">
-                                <h3>Title</h3>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Item 6
-                <li class="col-md-4 col-sm-6 mix apps ">
-                    <a href="portfolio-item-v2.php" title="View portfolio item">
-                        <div class="hover-content wow easePulse" data-wow-delay="0.9s">
-                            <img src="assets/img/app-screen.jpg" class="img-responsive" alt="application">
-                            <div class="top-part hidden-xs">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                            <div class="bottom-part hidden-xs">
-                                <h3>Title</h3>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-    </section>
-    -->
-
-    <!--  Pricing Tables  -->
-    <section class="section-lg">
-        <div class="container">
-            <h2 class="big-title text-center">The team</h2>
-            <p class="big-subtitle text-center">The guys who made all this possible</p>
-            <div class="space"></div>
-            <div class="row">
-                <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="panel panel-default">
-                        <div class="panel-body text-center">
-                            <div class="hover-content">
-                                <div class="visible-part">
-                                    <h2 class="text-primary">Tiago Vila Verde</h2>
-                                    <img class="img-responsive" src="/modules/core/img/smoking_hitchhiker.jpg">
-                                </div>
-                                <div class="hidden-part">
-                                    <h4 class="type">Details</h4>
-                                    <ul class="list-unstyled info-list md-list">
-                                        <li><span class="text-primary">Age</span> 23</li>
-                                        <li><span class="text-primary">Hometown</span> Porto, Portugal</li>
-                                        <li><span class="text-primary">Countries Visited</span> 20 something</li>
-                                        <li><span class="text-primary">Furthest plave visited</span> Thailand</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-               <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="panel panel-default">
-                        <div class="panel-body text-center">
-                            <div class="hover-content">
-                                <div class="visible-part">
-                                    <h2 class="text-primary">Tiago Vila Verde</h2>
-                                    <img class="img-responsive" src="/modules/core/img/smoking_hitchhiker.jpg">
-                                </div>
-                                <div class="hidden-part">
-                                    <h4 class="type">Details</h4>
-                                    <ul class="list-unstyled info-list md-list">
-                                        <li><span class="text-primary">Age</span> 23</li>
-                                        <li><span class="text-primary">Hometown</span> Porto, Portugal</li>
-                                        <li><span class="text-primary">Countries Visited</span> 20 something</li>
-                                        <li><span class="text-primary">Furthest plave visited</span> Thailand</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="panel panel-default">
-                        <div class="panel-body text-center">
-                            <div class="hover-content">
-                                <div class="visible-part">
-                                    <h2 class="text-primary">Tiago Vila Verde</h2>
-                                    <img class="img-responsive" src="/modules/core/img/smoking_hitchhiker.jpg">
-                                </div>
-                                <div class="hidden-part">
-                                    <h4 class="type">Details</h4>
-                                    <ul class="list-unstyled info-list md-list">
-                                        <li><span class="text-primary">Age</span> 23</li>
-                                        <li><span class="text-primary">Hometown</span> Porto, Portugal</li>
-                                        <li><span class="text-primary">Countries Visited</span> 20 something</li>
-                                        <li><span class="text-primary">Furthest plave visited</span> Thailand</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="panel panel-default">
-                        <div class="panel-body text-center">
-                            <div class="hover-content">
-                                <div class="visible-part">
-                                    <h2 class="text-primary">Tiago Vila Verde</h2>
-                                    <img class="img-responsive" src="/modules/core/img/smoking_hitchhiker.jpg">
-                                </div>
-                                <div class="hidden-part">
-                                    <h4 class="type">Details</h4>
-                                    <ul class="list-unstyled info-list md-list">
-                                        <li><span class="text-primary">Age</span> 23</li>
-                                        <li><span class="text-primary">Hometown</span> Porto, Portugal</li>
-                                        <li><span class="text-primary">Countries Visited</span> 20 something</li>
-                                        <li><span class="text-primary">Furthest plave visited</span> Thailand</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-               <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="panel panel-default">
-                        <div class="panel-body text-center">
-                            <div class="hover-content">
-                                <div class="visible-part">
-                                   <h2 class="text-primary">Tiago Vila Verde</h2>
-                                    <img class="img-responsive" src="/modules/core/img/smoking_hitchhiker.jpg">
-                                </div>
-                                <div class="hidden-part">
-                                    <h4 class="type">Details</h4>
-                                    <ul class="list-unstyled info-list md-list">
-                                        <li><span class="text-primary">Age</span> 23</li>
-                                        <li><span class="text-primary">Hometown</span> Porto, Portugal</li>
-                                        <li><span class="text-primary">Countries Visited</span> 20 something</li>
-                                        <li><span class="text-primary">Furthest plave visited</span> Thailand</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="panel panel-default">
-                        <div class="panel-body text-center">
-                            <div class="hover-content">
-                                <div class="visible-part">
-                                    <h2 class="text-primary">Tiago Vila Verde</h2>
-                                    <img class="img-responsive" src="/modules/core/img/smoking_hitchhiker.jpg">
-                                </div>
-                                <div class="hidden-part">
-                                    <h4 class="type">Details</h4>
-                                    <ul class="list-unstyled info-list md-list">
-                                        <li><span class="text-primary">Age</span> 23</li>
-                                        <li><span class="text-primary">Hometown</span> Porto, Portugal</li>
-                                        <li><span class="text-primary">Countries Visited</span> 20 something</li>
-                                        <li><span class="text-primary">Furthest plave visited</span> Thailand</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="panel panel-default bg-grey-4 text-center wow fadeIn" data-wow-delay="0s">
-                <div class="panel-body">
-                    <h4 class="wow fadeIn" data-wow-delay="0.25s">Feel free to contact us!</h4>
-                    <div class="space-sm"></div>
-                    <ul class="list-inline wow fadeIn" data-wow-delay="0.5s">
-                        <li>
-                            <a href="#contact-us" class="btn btn-primary scroll">
-                                <i class="fa fa-envelope"></i>trabel@trabel.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-primary-trn">
-                                <i class="fa fa-phone"></i>+351 919 919 919
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="map">
-        <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="false"></ui-gmap-google-map>
-    </section>
-
-    <!-- Scripts-->
-    <!--Back to top-->
-<a href="#" class="back-to-top">
-    <i class="fa fa-angle-up"></i>
+        <ul class="row filter-grid-v2" id="Grid">
+        <!-- mix - select all, devices - filter only devices -->
+  <!-- Item 1
+        <li class="col-md-4 col-sm-6 mix devices">
+        <a href="portfolio-item-v2.php" title="View portfolio item">
+        <div class="hover-content  wow easePulse" data-wow-delay="0s">
+        <img src="assets/img/sign-up-sketch.jpg" class="img-responsive" alt="Portfolio - application">
+        <div class="top-part hidden-xs">
+        <i class="fa fa-eye"></i>
+      </div>
+      <div class="bottom-part hidden-xs">
+      <h3>Title</h3>
+    </div>
+  </div>
 </a>
+</li>
 
-<!--[if lt IE 9]>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<!-- Item 2
+<li class="col-md-4 col-sm-6 mix apps web ">
+<a href="portfolio-item-v2.php" title="View portfolio item">
+<div class="hover-content wow easePulse" data-wow-delay="0.3s">
+<img src="assets/img/minimal-wireframe-assets.jpg" class="img-responsive" alt="Websites Layout">
+<div class="top-part hidden-xs">
+<i class="fa fa-eye"></i>
+</div>
+<div class="bottom-part hidden-xs">
+<h3>Title</h3>
+</div>
+</div>
+</a>
+</li>
+
+<!-- Item 3
+<li class="col-md-4 col-sm-6 mix apps ">
+<a href="portfolio-item-v2.php" title="View portfolio item">
+<div class="hover-content wow easePulse" data-wow-delay="0.6s">
+<img src="assets/img/App-Preview.jpg" class="img-responsive" alt="Portfolio - application">
+<div class="top-part hidden-xs">
+<i class="fa fa-eye"></i>
+</div>
+<div class="bottom-part hidden-xs">
+<h3>Title</h3>
+</div>
+</div>
+</a>
+</li>
+
+<!-- Item 4
+<li class="col-md-4 col-sm-6 mix devices ">
+<a href="portfolio-item-v2.php" title="View portfolio item">
+<div class="hover-content wow easePulse" data-wow-delay="0.3s">
+<img src="assets/img/macbook.jpg" class="img-responsive" alt="Apple Macbook Pro">
+<div class="top-part hidden-xs">
+<i class="fa fa-eye"></i>
+</div>
+<div class="bottom-part hidden-xs">
+<h3>Title</h3>
+</div>
+</div>
+</a>
+</li>
+
+<!-- Item 5
+<li class="col-md-4 col-sm-6 mix web ">
+<a href="portfolio-item-v2.php" title="View portfolio item">
+<div class="hover-content wow easePulse" data-wow-delay="0.6s">
+<img src="assets/img/webdesign.jpg" class="img-responsive" alt="Webdesign">
+<div class="top-part hidden-xs">
+<i class="fa fa-eye"></i>
+</div>
+<div class="bottom-part hidden-xs">
+<h3>Title</h3>
+</div>
+</div>
+</a>
+</li>
+
+<!-- Item 6
+<li class="col-md-4 col-sm-6 mix apps ">
+<a href="portfolio-item-v2.php" title="View portfolio item">
+<div class="hover-content wow easePulse" data-wow-delay="0.9s">
+<img src="assets/img/app-screen.jpg" class="img-responsive" alt="application">
+<div class="top-part hidden-xs">
+<i class="fa fa-eye"></i>
+</div>
+<div class="bottom-part hidden-xs">
+<h3>Title</h3>
+</div>
+</div>
+</a>
+</li>
+
+</ul>
+
+</div>
+</section>
+-->
+
+  <!--  Pricing Tables  -->
+  <section class="section-lg">
+    <div class="container">
+      <h2 class="big-title text-center">The team</h2>
+      <p class="big-subtitle text-center">The guys who made all this possible</p>
+      <div class="space"></div>
+      <div class="row">
+        <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+          <div class="panel panel-default">
+            <div class="panel-body text-center">
+              <div class="hover-content">
+                <div class="visible-part">
+                  <h2 class="text-primary">JoÃ£o Almeida</h2>
+                  <img class="img-responsive" style="height: 300px; margin: auto;" src="/modules/core/img/smoking_hitchhiker.jpg">
+                </div>
+                <div class="hidden-part">
+                  <h4 class="type">Details</h4>
+                  <ul class="list-unstyled info-list md-list">
+                    <li>
+                      <span class="text-primary">Age</span> 23</li>
+                    <li>
+                      <span class="text-primary">Hometown</span> Porto, Portugal</li>
+                    <li>
+                      <span class="text-primary">Countries Visited</span> 20 something</li>
+                    <li>
+                      <span class="text-primary">Furthest plave visited</span> Thailand</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+          <div class="panel panel-default">
+            <div class="panel-body text-center">
+              <div class="hover-content">
+                <div class="visible-part">
+                  <h2 class="text-primary"> Michal Humaj </h2>
+                  <img class="img-responsive" style="height: 300px; margin: auto;" src="/modules/core/img/smoking_hitchhiker.jpg">
+                </div>
+                <div class="hidden-part">
+                  <h4 class="type">Details</h4>
+                  <ul class="list-unstyled info-list md-list">
+                    <li>
+                      <span class="text-primary">Age</span> 23</li>
+                    <li>
+                      <span class="text-primary">Hometown</span> Porto, Portugal</li>
+                    <li>
+                      <span class="text-primary">Countries Visited</span> 20 something</li>
+                    <li>
+                      <span class="text-primary">Furthest plave visited</span> Thailand</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+          <div class="panel panel-default">
+            <div class="panel-body text-center">
+              <div class="hover-content">
+                <div class="visible-part">
+                  <h2 class="text-primary">Nuno Cruz</h2>
+                  <img class="img-responsive" style="height: 300px; margin: auto;" src="/modules/core/img/smoking_hitchhiker.jpg">
+                </div>
+                <div class="hidden-part">
+                  <h4 class="type">Details</h4>
+                  <ul class="list-unstyled info-list md-list">
+                    <li>
+                      <span class="text-primary">Age</span> 22</li>
+                    <li>
+                      <span class="text-primary">Hometown</span> Vila Real, Portugal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+          <div class="panel panel-default">
+            <div class="panel-body text-center">
+              <div class="hover-content">
+                <div class="visible-part">
+                  <h2 class="text-primary">Tiago Vila Verde</h2>
+                  <img class="img-responsive" style="height: 300px; margin: auto;" src="/modules/core/img/smoking_hitchhiker.jpg">
+                </div>
+                <div class="hidden-part">
+                  <h4 class="type">Details</h4>
+                  <ul class="list-unstyled info-list md-list">
+                    <li>
+                      <span class="text-primary">Age</span> 23</li>
+                    <li>
+                      <span class="text-primary">Hometown</span> Porto, Portugal</li>
+                    <li>
+                      <span class="text-primary">Countries Visited</span> 20 something</li>
+                    <li>
+                      <span class="text-primary">Furthest place visited</span> Thailand</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+          <div class="panel panel-default">
+            <div class="panel-body text-center">
+              <div class="hover-content">
+                <div class="visible-part">
+                  <h2 class="text-primary">Vasco GonÃ§alves</h2>
+                  <img class="img-responsive" style="height: 300px; margin: auto;" src="/modules/core/img/smoking_hitchhiker.jpg">
+                </div>
+                <div class="hidden-part">
+                  <h4 class="type">Details</h4>
+                  <ul class="list-unstyled info-list md-list">
+                    <li>
+                      <span class="text-primary">Age</span> 22</li>
+                    <li>
+                      <span class="text-primary">Hometown</span> Porto, Portugal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="space"></div>
+    </div>
+  </section>
+
+  <section class="map">
+    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="false"></ui-gmap-google-map>
+  </section>
+
+  <!-- Scripts-->
+  <!--Back to top-->
+  <a href="#" class="back-to-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
+
+  <!--[if lt IE 9]>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<!-- Footer-->
-<footer class="footer">
-  <div class="footer-top">
-    <div class="container">
+  <!-- Footer-->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <h4>Contact</h4>
-                <ul class="info-list md-list i-primary">
-                    <li>
-                        <i class="fa fa-envelope fa-fw"></i>
-                        <a href="#">trabel@trabel.com</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-phone fa-fw"></i>
-                        +351 919 919 919
-                    </li>
-                    <li>
-                        <i class="fa fa-map-marker fa-fw"></i>
-                        Av. dos Descobrimentos, 500, Lisbon
-                    </li>
-                </ul>
-            </div>
-            <div class="space-sm visible-sm visible-xs"></div>
-            <div class="col-md-6 col-lg-6 col-xs-12">
-                <h4>About Us</h4>
-                <p>We are a small web development start-up with ambition and passion for traveling</p>
-                <div class="space-sm"></div>
-                <h4>Follow Us</h4>
-                <ul class="circle-icons icons-list">
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-tumblr"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Follow us">
-                            <i class="fa fa-youtube-play"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+          <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+            <h4>Contact</h4>
+            <ul class="info-list md-list i-primary">
+              <li>
+                <i class="fa fa-envelope fa-fw"></i>
+                <a href="#">trabel@trabel.com</a>
+              </li>
+              <li>
+                <i class="fa fa-phone fa-fw"></i> +351 919 919 919
+              </li>
+              <li>
+                <i class="fa fa-map-marker fa-fw"></i> Av. dos Descobrimentos, 500, Lisbon
+              </li>
+            </ul>
+          </div>
+          <div class="space-sm visible-sm visible-xs"></div>
+          <div class="col-md-6 col-lg-6 col-xs-12">
+            <h4>About Us</h4>
+            <p>We are a small web development start-up with ambition and passion for traveling</p>
+            <div class="space-sm"></div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<div class="footer-bottom">
-    <div class="container">
+    <div class="footer-bottom">
+      <div class="container">
+      </div>
     </div>
-</div>
-</footer>
+  </footer>
 
 
 

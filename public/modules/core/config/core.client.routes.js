@@ -15,7 +15,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 		}).
 		state('home', {
 			url: '/',
-			templateUrl: 'modules/core/views/landing.client.view.html'
+			templateUrl: 'modules/core/views/home.client.view.html'
 		}).
     	state('dash', {
 			url: '/dashboard',

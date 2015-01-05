@@ -1,7 +1,39 @@
-<section data-ng-controller="DashboardController">
-
+<div data-ng-controller="DashboardController" data-ng-init="findTopTrips()">
+  <div id="content" class="col-xs-12 col-sm-12">
+    <div id="ajax-content">
+      <div class="row">
+        <div id="breadcrumb" class="col-xs-12">
+          <ol class="breadcrumb pull-left">
+            <li><a>Most popular trips</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container" id="ajax-content">
+          <div class="col-md-4 wow fadeIn" ng-repeat="trip in topTrips">
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                <h3 class="text-primary"><a ng-href="#!/trips/{{trip._id}}" style="color:#9C9A78">{{trip.name}} </a>
+                </h3>
+                <br>
                 <div>
-                    <br>Dashboard!</p>
+                  <ul class="list-unstyled info-list md-list">
+                    <li>
+                      <span class="text-primary" style="color:#9C9A78">Owner:</span> {{trip.user.displayName}} </li>
+                    <li>
+                      <span class="text-primary" style="color:#9C9A78">Places:</span> {{trip.markers.length}} </li>
+                    <li>
+                      <span class="text-primary" style="color:#9C9A78">Points of interest:</span> {{trip.nPOIs}} </li>
+                    <li>
+                      <span class="text-primary" style="color:#9C9A78">Likes:</span> {{trip.likes}}</li>
+                  </ul>
                 </div>
-
-</section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
