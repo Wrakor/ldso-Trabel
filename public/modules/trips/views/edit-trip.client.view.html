@@ -2,76 +2,112 @@
   <div id="sidebar-left" class="col-xs-12 col-sm-2">
     <p ng-hide="trip.markers.length"></p>
     <ul class="nav main-menu" ui-sortable="sortableOptions" ng-model="trip.markers">
-      <li class="sidebar-menu-item" ng-repeat="marker in trip.markers" ng-click="centerMap(trip.markers[$index])">
-          <a ng-click="centerMap(trip.markers[$index])">
-              <span>{{marker.place_name}}</span>
-              <span ng-click="deleteMarker($index)" ng-class="{disabled: isLoading}" class="markerdelete glyphicon glyphicon-remove"></span>
-          </a>
+      <li class="sidebar-menu-item" ng-repeat="marker in trip.markers">
+        <a ng-click="centerMap(trip.markers[$index])">
+          <span>{{marker.place_name}}</span>
+          <span class="pull-right">
+            <span style="margin-right:5px;font-size:16px;" ng-click="nearbyPOI($index)" class="fa fa-map-marker" tooltip="Nearby points of interest" tooltip-placement="bottom"></span>
+            <span ng-click="deleteMarker($index)" ng-class="{disabled: isLoading}" class="glyphicon glyphicon-remove"></span>
+          </span>
+        </a>
+        <ul class="nav main-menu" ui-sortable="POIsortableOptions" ng-model="marker.POIs">
+          <li class="sidebar-menu-item sidebar-submenu-item" ng-repeat="POI in marker.POIs">
+            <a ng-click="centerMapLatLng(POI.location.lat,POI.location.lng)">
+              <span>{{POI.name}}</span>
+              <span class="pull-right">
+                <span ng-click="showPOIDetails(POI)" style="margin-right:5px;" class="fa fa-foursquare" tooltip="View in Foursquare" tooltip-placement="bottom"></span>
+                <span ng-click="deletePOI(marker, $index)" ng-class="{disabled: isLoading}" class="glyphicon glyphicon-remove"></span>
+              </span>
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
 
-
   <div id="content" class="col-xs-12 col-sm-10">
+    <div class="preloader" style="display: none;">
+      <img src="img/devoops_getdata.gif" class="devoops-getdata" alt="preloader">
+    </div>
+    <div id="ajax-content">
+      <div class="row">
+        <div id="breadcrumb" class="col-xs-12" style="margin-bottom: 0px;">
+          <ol class="breadcrumb pull-left">
+            <li><a class="editable" ng-class="{disabled: isLoading}" onaftersave="trip.$update()" editable-text="trip.name" tooltip="Click to change name" tooltip-placement="right">{{trip.name}}</a>
+            </li>
+          </ol>
+          <div id="social" class="pull-right privacyToggle" ng-switch on="trip.privacy" ng-click="togglePrivacy()" ng-class="{disabled: isLoading}" tooltip="Click to change Privacy" tooltip-placement="left">
+            <a ng-switch-when="1">Public Trip</a>
+            <a ng-switch-when="0">Private Trip</a>
 
-      <div class="preloader" style="display: none;">
-          <img src="img/devoops_getdata.gif" class="devoops-getdata" alt="preloader">
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </div>
+        </div>
       </div>
-      <div id="ajax-content">
-          <div class="row">
-              <div id="breadcrumb" class="col-xs-12" style="margin-bottom: 0px;">
-                  <ol class="breadcrumb pull-left">
-                      <li><a class="editable" ng-class="{disabled: isLoading}" onaftersave="trip.$update()" editable-text="trip.name" tooltip="Click to change name" tooltip-placement="right">{{trip.name}}</a></li>
-                  </ol>
-                  <div id="social" class="pull-right privacyToggle" ng-switch on="trip.privacy" ng-click="togglePrivacy()" ng-class="{disabled: isLoading}" tooltip="Click to change Privacy" tooltip-placement="left">
-                      <a ng-switch-when="1">Public Trip</a>
-                      <a ng-switch-when="0">Private Trip</a>
-
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                  </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
-                  <div class="box">
-                      <ui-gmap-google-map center="map.center" zoom="map.zoom" events="map.events" control="map.object">
-                          <ui-gmap-search-box template="searchbox.template" position="searchbox.position" events="searchbox.events"/>
-                          <ui-gmap-markers models="trip.markers" idkey="'place_id'" coords="'location'" events="markers.events" />
-                      </ui-gmap-google-map>
-                  </div>
-              </div>
-          </div>
-
-          <div class="page-header">
-
-              <div class="member_options">
-                  <p class="trip_owner">Owned by {{trip.user.displayName}}</p>
-                  <ul class="trip_members">
-                      <li ng-repeat="member in trip.members">{{member.user.displayName}}</li>
-                  </ul>
-                  <a href ng-click="AddMate()">
-                      <span>Add a tripmate</span>
-                  </a>
-              </div>
-          </div>
-          <script type="text/ng-template" id="searchbox.tpl.html">
-              <div class="form-group">
-                  <input class="form-control searchbox" type="text" placeholder="Search Box">
-              </div>
-          </script>
-          <div>
-            <div class="pull-left">
-              <a class="btn btn-primary" data-ng-click="returnToTripView()" tooltip="Back to Trip View">
-                <i class="glyphicon glyphicon-arrow-left"></i>
+      <!-- Foursquare POI list -->
+      <div class="POI_list" ng-show="POIList.length">
+        <p>
+          <span ng-click="POIList = []" class="closePOI glyphicon glyphicon-remove"></span>
+          <img src="https://playfoursquare.s3.amazonaws.com/press/2014/foursquare-wordmark.png" class="foursquare_logo" />
+        </p>
+        <div class="POI_list_body" ng-repeat="group in POIList">
+          <h4 class="POI_list_group_title">{{group.type}}</h4>
+          <h5 ng-show="!group.items.length">No results...</h5>
+          <div ng-click="centerMapLatLng(item.venue.location.lat, item.venue.location.lng)" class="POI_list_item" ng-repeat="item in group.items">
+            <p class="POI_list_item_name">{{item.venue.name}}</p>
+            <span class="POI_list_item_rating" ng-class="{'positive': item.venue.rating>=7.0, 'neutral': item.venue.rating<7.0 && item.venue.rating>=5.0, 'negative': item.venue.rating<5.0}">{{item.venue.rating}}</span>
+            <small>{{item.venue.categories[0].name}}</small>
+            <span class="pull-right">
+              <span ng-show="!item.venue.details" ng-class="{disabled: isLoading}" ng-click="addPOI(item.venue)" class="glyphicon glyphicon-plus POI_list_item_link"></span>
+              <a href="http://foursquare.com/v/{{item.venue.id}}" target="_blank">
+                <span tooltip="View in Foursquare" class="fa fa-foursquare POI_list_item_link"></span>
               </a>
-            </div>
-            <p style="text-align:right;margin-top:5px;font-size:24px;">
-              <a href ng-click="resetMap()" tooltip="Reset Map" tooltip-placement="left">
-                  <span class="glyphicon glyphicon-repeat"></span>
-              </a>
-            </p>
+            </span>
           </div>
+        </div>
       </div>
+      <!-- Map -->
+      <div class="row">
+        <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+          <div class="box">
+            <ui-gmap-google-map center="map.center" zoom="map.zoom" events="map.events" control="map.object">
+              <ui-gmap-search-box template="searchbox.template" position="searchbox.position" events="searchbox.events" />
+              <ui-gmap-markers models="trip.markers" idkey="'place_id'" coords="'location'" events="markers.events" />
+            </ui-gmap-google-map>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+
+        <div class="member_options">
+          <p class="trip_owner">Owned by {{trip.user.displayName}}</p>
+          <ul class="trip_members">
+            <li ng-repeat="member in trip.members">{{member.user.displayName}}</li>
+          </ul>
+          <a href ng-click="AddMate()">
+            <span>Add a tripmate</span>
+          </a>
+        </div>
+      </div>
+      <script type="text/ng-template" id="searchbox.tpl.html">
+        <div class="form-group">
+          <input class="form-control searchbox" type="text" placeholder="Search Box">
+        </div>
+      </script>
+      <div>
+        <div class="pull-left">
+          <a class="btn btn-primary" data-ng-click="returnToTripView()" tooltip="Back to Trip View">
+            <i class="glyphicon glyphicon-arrow-left"></i>
+          </a>
+        </div>
+        <p style="text-align:right;margin-top:5px;font-size:24px;">
+          <a href ng-click="resetMap()" tooltip="Reset Map" tooltip-placement="left">
+            <span class="glyphicon glyphicon-repeat"></span>
+          </a>
+        </p>
+      </div>
+    </div>
   </div>
 </div>

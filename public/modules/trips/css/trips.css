@@ -14,6 +14,18 @@
   cursor:pointer;
 }
 
+.sidebar-submenu-item>a{
+  padding-left: 45px !important;
+  padding-right: 30px !important;
+  background-color:#55626F !important;
+  color:#C2C2C2 !important;
+}
+
+.sidebar-submenu-item>a:hover{
+  background-color:#3C464F !important;
+  color:#DFDFDF !important;
+}
+
 .form-control.searchbox {
   margin-top:5px;
   width: 50%;
@@ -38,8 +50,11 @@ h1.editable:hover {
   margin-bottom: 1em;
 }
 
-.markerdelete {
-  float:right;
+.closePOI {
+  position:absolute;
+  right:5px;
+  top:5px;
+  cursor:pointer;
 }
 
 /* md */
@@ -62,4 +77,106 @@ h1.editable:hover {
 
 div.tooltip {
   z-index:9999;
+}
+
+.POI_list {
+  color: ##525252;
+  background-color:#FBFBF0;
+  border:1px solid #353535;
+  cursor:default;
+  margin-top: 15px;
+  position:absolute;
+  text-align:left;
+  z-index:9999;
+  width:250px;
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+.POI_list_body {
+  max-height:300px;
+  overflow:auto;
+  padding: 10px 25px 20px;
+  margin-top:35px;
+}
+
+.POI_list_item_rating {
+  color: white;
+  background-color:gray;
+  border-radius: 16px;
+  float: left;
+  font-size: 13px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 7px;
+  padding: 0;
+  top: 0;
+  width: 32px;
+  text-align:center;
+}
+
+.foursquare_logo {
+  position:absolute;
+  left:5px;
+  top:5px;
+  width:100px;
+}
+
+.POI_list_item_rating.negative {
+  background-color:#e6092c;
+}
+
+.POI_list_item_rating.positive {
+  background-color:#00b551;
+}
+
+.POI_list_item_rating.neutral {
+  background-color:#ffc800;
+}
+
+.POI_list_item {
+  line-height: 32px;
+  margin: 0px -25px;
+  padding: 5px 25px;
+  cursor:pointer;
+}
+
+.POI_list_item:hover {
+  background-color:#f0f0f0;
+}
+
+.POI_list_item_name {
+  font-weight:bold;
+  line-height:normal;
+}
+
+.POI_list_group_title {
+  border-bottom: 1px solid;
+  padding-bottom:10px;
+  margin-top:0px;
+  text-align:center;
+}
+
+.POI_list_item_link {
+  font-size:20px;
+  color: #999;
+}
+
+.POI_list_item_link:hover {
+  color: #666;
 }
