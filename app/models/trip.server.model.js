@@ -21,7 +21,6 @@ var TripMember = new Schema({
 	  _id: false
 	});
 
-
 /**
  * Trip Schema
  */
@@ -56,6 +55,14 @@ var TripSchema = new Schema({
 	startDate: {
 		type: Date,
 		default: Date.now
+	},
+	likes: {
+		type: Number,
+		default: 0
+	},
+	usersThatLiked: {
+		type: [String],
+		ref: []
 	},
 	endDate: {
 		type: Date,

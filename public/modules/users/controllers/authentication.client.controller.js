@@ -18,7 +18,7 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$http
 				$scope.credentials = null;
 				//$scope.success = response.message;
 
-				SweetAlert.swal("Success!", "An email has been sent with further instructions", "success");
+				SweetAlert.swal('Success!', 'An email has been sent with further instructions', 'success');
 				$location.path('/');
 				
 				

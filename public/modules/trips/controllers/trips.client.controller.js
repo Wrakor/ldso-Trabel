@@ -2,9 +2,9 @@
 
 // Trips controller
 angular.module('trips').controller('TripsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Trips', 'uiGmapGoogleMapApi', 'ngDialog', '$http',  'SweetAlert',
-	function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http, SweetAlert) {
-		$scope.authentication = Authentication;
-
+	function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http, SweetAlert) {		
+		$scope.user = Authentication.user;
+		
 		$scope.map = {
 			//TODO: Center map on trip markers
 			center: {
@@ -73,12 +73,12 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 		$scope.remove = function( trip ) {
 			
 			SweetAlert.swal({
-			   title: "Are you sure?",
-			   text: "Your will not be able to recover this trip!",
-			   type: "warning",
+			   title: 'Are you sure?',
+			   text: 'Your will not be able to recover this trip!',
+			   type: 'warning',
 			   showCancelButton: true,
-			   confirmButtonColor: "#DD6B55",
-			   confirmButtonText: "Yes, delete it!"
+			   confirmButtonColor: '#DD6B55',
+			   confirmButtonText: 'Yes, delete it!'
 			}, 
 			function(confirm){ 
 			   if (confirm) {
@@ -321,6 +321,11 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 
 			$scope.init = function() {
 
+				if ($scope.trip.usersThatLiked.indexOf($scope.user._id) === -1) 
+					$scope.alreadyLiked = false;
+				else
+					$scope.alreadyLiked = true;
+				
 				addCurrentMarkersToTimeline();
 				$scope.timeline_options.start = $scope.trip.startDate;
 				$scope.timeline_options.end = $scope.trip.endDate;
@@ -361,11 +366,11 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 			$scope.hasPermission = function(){
 				var permission = false;
 
-				if($scope.authentication.user._id === $scope.trip.user._id){
+				if($scope.user._id === $scope.trip.user._id){
 					permission = true;
 				}else{
 					$scope.trip.members.forEach(function(member){
-						if(member.user._id === $scope.authentication.user._id || member.user.permission === 'write'){
+						if(member.user._id === $scope.user._id || member.user.permission === 'write'){
 							permission = true;
 						}
 					});
@@ -375,18 +380,36 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 			};
 
 			$scope.isOwner = function() {
-				return $scope.authentication.user._id === $scope.trip.user._id;
+				return $scope.user._id === $scope.trip.user._id;
 			};
 
 			$scope.isTripMember = function(){
 				var isMember = false;
 				$scope.trip.members.forEach(function(member){
-					if(member.user._id === $scope.authentication.user._id){
+					if(member.user._id === $scope.user._id){
 						isMember = true;
 					}
 				});
 				return isMember;
 			};
 		});
+		
+		$scope.likeTrip = function() {
+			//if user didn't like
+			if ($scope.trip.usersThatLiked.indexOf($scope.user._id) === -1) {
+				$scope.trip.likes++;
+				$scope.trip.usersThatLiked.push($scope.user._id);
+				$scope.alreadyLiked = true;
+				$scope.updateTrip();
+			}
+			//if user already liked
+			else {
+				$scope.trip.likes--;
+				var index = $scope.trip.usersThatLiked.indexOf($scope.user._id);
+				delete $scope.trip.usersThatLiked[index];
+				$scope.alreadyLiked = false;
+				$scope.updateTrip();	
+			}
+		};
 	}
 ]);
