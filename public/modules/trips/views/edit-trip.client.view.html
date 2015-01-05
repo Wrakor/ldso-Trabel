@@ -6,10 +6,21 @@
           <a ng-click="centerMap(trip.markers[$index])">
               <span>{{marker.place_name}}</span>
               <span class="pull-right">
-                <span style="margin-right:5px;" ng-click="closestPOI(trip.markers[$index])" class="fa fa-foursquare" tooltip="Nearby points of interest" tooltip-placement="bottom"></span>
+                <span style="margin-right:5px;font-size:16px;" ng-click="nearbyPOI($index)" class="fa fa-map-marker" tooltip="Nearby points of interest" tooltip-placement="bottom"></span>
                 <span ng-click="deleteMarker($index)" ng-class="{disabled: isLoading}" class="glyphicon glyphicon-remove"></span>
               </span>
           </a>
+          <ul class="nav main-menu" ui-sortable="POIsortableOptions" ng-model="marker.POIs">
+            <li class="sidebar-menu-item sidebar-submenu-item" ng-repeat="POI in marker.POIs">
+              <a ng-click="centerMapLatLng(POI.location.lat,POI.location.lng)">
+                <span>{{POI.name}}</span>
+                <span class="pull-right">
+                  <span ng-click="showPOIDetails(POI)" style="margin-right:5px;" class="fa fa-foursquare" tooltip="View in Foursquare" tooltip-placement="bottom"></span>
+                  <span ng-click="deletePOI(marker, $index)" ng-class="{disabled: isLoading}" class="glyphicon glyphicon-remove"></span>
+                </span>
+              </a>
+            </li>
+          </ul>
       </li>
     </ul>
   </div>
@@ -33,6 +44,7 @@
                 </div>
             </div>
         </div>
+        <!-- Foursquare POI list -->
         <div class="POI_list" ng-show="POIList.length">
           <p>
             <span ng-click="POIList = []" class="closePOI glyphicon glyphicon-remove"></span>
@@ -45,10 +57,16 @@
               <p class="POI_list_item_name">{{item.venue.name}}</p>
               <span class="POI_list_item_rating" ng-class="{'positive': item.venue.rating>=7.0, 'neutral': item.venue.rating<7.0 && item.venue.rating>=5.0, 'negative': item.venue.rating<5.0}">{{item.venue.rating}}</span>
                 <small>{{item.venue.categories[0].name}}</small>
-                <a href="http://foursquare.com/v/{{item.venue.id}}" target="_blank" class="POI_list_item_foursquare_link" tooltip="View in Foursquare"><span class="fa fa-foursquare"/></a>
+                <span class="pull-right">
+                  <span ng-show="!item.venue.details" ng-class="{disabled: isLoading}" ng-click="addPOI(item.venue)" class="glyphicon glyphicon-plus POI_list_item_link"></span>
+                  <a href="http://foursquare.com/v/{{item.venue.id}}" target="_blank">
+                    <span tooltip="View in Foursquare" class="fa fa-foursquare POI_list_item_link"></span>
+                  </a>
+              </span>
               </div>
-            </div>
           </div>
+        </div>
+        <!-- Map -->
         <div class="row">
             <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
                 <div class="box">

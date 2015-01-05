@@ -14,6 +14,18 @@
   cursor:pointer;
 }
 
+.sidebar-submenu-item>a{
+  padding-left: 45px !important;
+  padding-right: 30px !important;
+  background-color:#55626F !important;
+  color:#C2C2C2 !important;
+}
+
+.sidebar-submenu-item>a:hover{
+  background-color:#3C464F !important;
+  color:#DFDFDF !important;
+}
+
 .form-control.searchbox {
   margin-top:5px;
   width: 50%;
@@ -157,14 +169,14 @@ div.tooltip {
   border-bottom: 1px solid;
   padding-bottom:10px;
   margin-top:0px;
+  text-align:center;
 }
 
-.POI_list_item_foursquare_link {
+.POI_list_item_link {
   font-size:20px;
   color: #999;
-  float:right;
 }
 
-.POI_list_item_foursquare_link:hover {
+.POI_list_item_link:hover {
   color: #666;
 }

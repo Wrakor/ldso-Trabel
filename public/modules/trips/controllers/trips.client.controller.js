@@ -193,7 +193,8 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 					location: {
 						latitude: place.geometry.location.lat(),
 						longitude: place.geometry.location.lng()
-					}
+					},
+					POIs: []
 				};
 				//TODO: save in different collection
 				//TODO: should we allow this?
@@ -205,6 +206,7 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 						if(marker.place_id === place.place_id) {
 							exists = true;
 							SweetAlert.swal('No duplicate points allowed', '', 'error');
+							return;
 						}
 					});
 				}
@@ -234,6 +236,32 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 				}
 			};
 
+			$scope.addPOI = function(POI) {
+				var exists = false;
+				$scope.trip.markers[$scope.POISelectedMarkerIndex].POIs.forEach(function(POI_temp) {
+					if(POI.id === POI_temp.id) {
+						exists = true;
+						SweetAlert.swal('No duplicate points allowed', '', 'error');
+						return;
+					}
+				});
+				if(!exists) {
+					$scope.trip.markers[$scope.POISelectedMarkerIndex].POIs.push(POI);
+					$scope.updateTrip();
+				}
+			};
+
+			$scope.centerMap = function(marker) {
+				var map = $scope.map.object.getGMap();
+				if(marker.viewport)
+				{
+					map.fitBounds(makeViewport(marker.viewport));
+				}
+				else {
+					$scope.centerMapLatLng(marker.location.latitude,marker.location.longitude);
+				}
+			};
+
 			$scope.centerMapLatLng = function(latitude, longitude) {
 				var map = $scope.map.object.getGMap();
 				map.setCenter(
@@ -244,34 +272,25 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 				map.setZoom(17);
 			};
 
-			$scope.centerMap = function(marker) {
-				var map = $scope.map.object.getGMap();
-				if(marker.viewport)
-				{
-					map.fitBounds(makeViewport(marker.viewport));
-				}
-				else {
-					map.setCenter(
-					{
-						lat:marker.location.latitude,
-						lng:marker.location.longitude
-					});
-					map.setZoom(17);
-				}
-			};
-
 			$scope.deleteMarker = function(index) {
 				$scope.trip.markers.splice(index, 1);
 				$scope.init(); //need to re-init (bounds cant be "un-extended")
 				$scope.updateTrip();
 			};
 
+			$scope.deletePOI = function(marker, index) {
+				marker.POIs.splice(index, 1);
+				$scope.updateTrip();
+			};
+
 			$scope.updateTrip = function() {
 				$scope.isLoading = true;
 				$scope.sortableOptions.disabled = true;
+				$scope.POIsortableOptions.disabled = true;
 				$scope.trip.$update().then(function (response) {
 					$scope.isLoading = false;
 					$scope.sortableOptions.disabled = false;
+					$scope.POIsortableOptions.disabled = false;
 				});
 			};
 
@@ -284,6 +303,18 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 					if(ui.item.index()!==ui.item.i) {
 						$scope.lineCoords.splice(ui.item.index(), 0, $scope.lineCoords.splice(ui.item.i, 1)[0]);
 						$scope.path.setPath($scope.lineCoords);
+						$scope.updateTrip();
+					}
+				}
+			};
+
+			$scope.POIsortableOptions = {
+				start: function(e, ui) {
+					ui.item.i = ui.item.index();
+				},
+				stop: function(e, ui) {
+					//update positions in lineCoords array
+					if(ui.item.index()!==ui.item.i) {
 						$scope.updateTrip();
 					}
 				}
@@ -316,20 +347,30 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 				}
 			};
 
-			$scope.closestPOI = function(marker) {
-				var fourSquareQuery = 'll=' + marker.location.latitude + ',' + marker.location.longitude;
+			$scope.nearbyPOI = function(markerIndex) {
+				var marker = $scope.trip.markers[markerIndex];
+				//Replace this with something better
+				var prompt = window.prompt('Enter your search query:');
+				if(prompt!==null) {
+					var fourSquareQuery = 'll=' + marker.location.latitude + ',' + marker.location.longitude;
 
-				fourSquareQuery+='&query=' + window.prompt('POI Query:');
+					fourSquareQuery+='&query=' + prompt;
 
-				$http.get('https://api.foursquare.com/v2/venues/explore?client_id=H2LVVK045LCEOM235LT5GBAA3HGETTMNPRMYN23Y4EGSQGVX&client_secret=QZSL0O3ZKLZNH4XJ5I5SJNRR2W4L5YUNMFNEUY52XXG44MLT&v=20130815&'+fourSquareQuery).
-				success(function(data, status, headers, config) {
-					console.log(data.response.groups);
-					$scope.POIList = data.response.groups;
-				}).
-				error(function(data, status, headers, config) {
-					alert('Error getting data from Foursquare');
-				});
+					$http.get('https://api.foursquare.com/v2/venues/explore?client_id=H2LVVK045LCEOM235LT5GBAA3HGETTMNPRMYN23Y4EGSQGVX&client_secret=QZSL0O3ZKLZNH4XJ5I5SJNRR2W4L5YUNMFNEUY52XXG44MLT&v=20130815&'+fourSquareQuery).
+					success(function(data, status, headers, config) {
+						$scope.POIList = data.response.groups;
+						$scope.POISelectedMarkerIndex = markerIndex;
+					}).
+					error(function(data, status, headers, config) {
+						alert('Error getting data from Foursquare');
+					});
+				}
 			};
+
+			$scope.showPOIDetails = function(POI) {
+				POI.details = true;
+				$scope.POIList = [{type:'POI Details', details:true, items: [{venue: POI}]}];
+			}
 
 			$scope.init = function() {
 
@@ -367,6 +408,7 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 				$scope.trip.privacy = $scope.trip.privacy?0:1;
 				//TODO: optimize this, only pass field
 				$scope.updateTrip();
+
 			};
 
 			//TODO security issues?
