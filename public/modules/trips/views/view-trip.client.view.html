@@ -43,18 +43,18 @@
       </div>
 
       <div class="pull-right">
-        <span data-ng-show="hasPermission()">
-          <a class="btn btn-primary" data-ng-click="leaveTrip();" data-ng-show="isTripMember()" tooltip="Leave this trip">
+        <span data-ng-show="trip.user && hasPermission()">
+          <a class="btn btn-primary" data-ng-click="leaveTrip();" data-ng-show="trip.user && isTripMember()" tooltip="Leave this trip">
             <i class="glyphicon glyphicon-remove"></i>
           </a>
           <a class="btn btn-primary" href="/#!/trips/{{trip._id}}/edit" tooltip="Edit">
             <i class="glyphicon glyphicon-edit"></i>
           </a>
-          <a class="btn btn-primary" data-ng-click="remove();" data-ng-show="isOwner()" tooltip="Delete">
+          <a class="btn btn-primary" data-ng-click="remove();" data-ng-show="trip.user && isOwner()" tooltip="Delete">
             <i class="glyphicon glyphicon-trash"></i>
           </a>
         </span>
-        <span data-ng-show="hasPermission()===false">
+        <span data-ng-show="trip.user && hasPermission()===false">
           <a class="btn btn-primary" data-ng-click="requestToJoin();" tooltip="Request to join trip">
             <i class="glyphicon glyphicon-upload"></i>
           </a>
