@@ -1,10 +1,10 @@
 'use strict';
 
 // Trips controller
-angular.module('trips').controller('TripsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Trips', 'uiGmapGoogleMapApi', 'ngDialog', '$http',  'SweetAlert',
-	function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http, SweetAlert) {
+angular.module('trips').controller('TripsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Trips', 'uiGmapGoogleMapApi', 'ngDialog', '$http',  'SweetAlert', '$log',
+	function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http, SweetAlert, $log) {
 		$scope.authentication = Authentication;
-
+		$scope.$log = $log;
 		$scope.map = {
 			//TODO: Center map on trip markers
 			center: {
@@ -234,16 +234,28 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 				}
 			};
 
+			$scope.centerMapLatLng = function(latitude, longitude) {
+				var map = $scope.map.object.getGMap();
+				map.setCenter(
+				{
+					lat:latitude,
+					lng:longitude
+				});
+				map.setZoom(17);
+			};
+
 			$scope.centerMap = function(marker) {
 				var map = $scope.map.object.getGMap();
 				if(marker.viewport)
+				{
 					map.fitBounds(makeViewport(marker.viewport));
+				}
 				else {
 					map.setCenter(
-						{
-							lat:marker.location.latitude,
-							lng:marker.location.longitude
-						});
+					{
+						lat:marker.location.latitude,
+						lng:marker.location.longitude
+					});
 					map.setZoom(17);
 				}
 			};
@@ -305,19 +317,14 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
 			};
 
 			$scope.closestPOI = function(marker) {
-				var fourSquareQuery;
-				console.log(marker);
-				if(marker.viewport) {
-					var viewport = makeViewport(marker.viewport);
-					fourSquareQuery = 'ne=' + viewport.getNorthEast().lat + ',' + viewport.getNorthEast().lng +
-					'&sw=' + viewport.getSouthWest().lat + ',' + viewport.getSouthWest().lng;
-				}
-				else
-					fourSquareQuery = 'll=' + marker.getPosition().lat() + ',' + marker.getPosition().lng()+'&radius=800';
+				var fourSquareQuery = 'll=' + marker.location.latitude + ',' + marker.location.longitude;
 
-				$http.get('https://api.foursquare.com/v2/venues/search?client_id=H2LVVK045LCEOM235LT5GBAA3HGETTMNPRMYN23Y4EGSQGVX&client_secret=QZSL0O3ZKLZNH4XJ5I5SJNRR2W4L5YUNMFNEUY52XXG44MLT&v=20130815&intent=browse&'+fourSquareQuery+'&query=sushi').
+				fourSquareQuery+='&query=' + window.prompt('POI Query:');
+
+				$http.get('https://api.foursquare.com/v2/venues/explore?client_id=H2LVVK045LCEOM235LT5GBAA3HGETTMNPRMYN23Y4EGSQGVX&client_secret=QZSL0O3ZKLZNH4XJ5I5SJNRR2W4L5YUNMFNEUY52XXG44MLT&v=20130815&'+fourSquareQuery).
 				success(function(data, status, headers, config) {
-					console.log(data.response.venues);
+					console.log(data.response.groups);
+					$scope.POIList = data.response.groups;
 				}).
 				error(function(data, status, headers, config) {
 					alert('Error getting data from Foursquare');
