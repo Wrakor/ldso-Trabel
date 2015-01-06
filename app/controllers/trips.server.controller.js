@@ -135,7 +135,8 @@ exports.search = function(req, res) {
   Trip.find({
       'name': {
         $regex: regex
-      }
+      },
+      'privacy': 1
     })
     .populate('user members.user', 'displayName email')
     .exec(function(err, trips) {
