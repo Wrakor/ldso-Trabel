@@ -2,19 +2,19 @@
 
 // Trips controller
 angular.module('trips').controller('TripsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Trips', 'uiGmapGoogleMapApi', 'ngDialog', '$http', 'SweetAlert', 'Socket',
-	function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http, SweetAlert, Socket) {
-		$scope.user = Authentication.user;
-		$scope.authentication = Authentication;
+  function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http, SweetAlert, Socket) {
+    $scope.user = Authentication.user;
+    $scope.authentication = Authentication;
 
-		$scope.map = {
-			//TODO: Center map on trip markers
-			center: {
-				latitude: 20,
-				longitude: 0
-			},
-			zoom: 2,
-			events: {
-				/*click: function(maps, eventName, args){
+    $scope.map = {
+      //TODO: Center map on trip markers
+      center: {
+        latitude: 20,
+        longitude: 0
+      },
+      zoom: 2,
+      events: {
+        /*click: function(maps, eventName, args){
 					console.log('CLICKED ON:', args[0].latLng);
 				},
 				center_changed: function(maps, eventName, args){
@@ -98,26 +98,22 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
     };
 
     // Find existing Trip
-    $scope.findOne = function(editMode) {
+    $scope.findOne = function() {
       $scope.trip = Trips.get({
         tripId: $stateParams.tripId
       }, function(data) { //this runs after trip is loaded
         //fix error when running tests
         if (typeof $scope.init === 'function') {
           $scope.init();
-          if(editMode){ //Deal with socket connection
-	
-						$scope.socket = Socket.factory($stateParams.tripId); //opens socket connection 
-						
 
-						$scope.socket.on('gotUpdate', function(data){
-						
-							$scope.findOne(false);
-						});
-					
+          $scope.socket = Socket.factory($stateParams.tripId); //opens socket connection
 
-						
-					}
+
+          $scope.socket.on('gotUpdate', function(data) {
+
+            $scope.findOne(false);
+          });
+
         }
       });
     };
@@ -385,7 +381,7 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
         var map = $scope.map.object.getGMap();
         $scope.bounds = new maps.LatLngBounds();
         $scope.lineCoords = [];
-        if($scope.trip.markers.length === 0) {
+        if ($scope.trip.markers.length === 0) {
           navigator.geolocation.getCurrentPosition(function(position) {
             map.setCenter({
               lat: position.coords.latitude,
@@ -393,8 +389,7 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
             });
             map.setZoom(17);
           });
-        }
-        else {
+        } else {
           for (var i = 0; i < $scope.trip.markers.length; i++) {
             var marker = $scope.trip.markers[i];
             var latlng = new maps.LatLng(
