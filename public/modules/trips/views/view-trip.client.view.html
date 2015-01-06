@@ -73,7 +73,7 @@
         <span ng-if="trip.likes == 0"> No one liked this trip yet! </span>
         <span ng-if="trip.likes > 0 && alreadyLiked == 0"> {{trip.likes}} liked this trip! </span>
         <span ng-if="trip.likes == 1 && alreadyLiked == 1"> You liked this trip! </span>
-        <span ng-if="trip.likes > 1 && alreadyLiked == 1"> You and {{trip.likes}} other(s) liked this trip! </span>
+        <span ng-if="trip.likes > 1 && alreadyLiked == 1"> You and {{trip.likes-1}} other(s) liked this trip! </span>
         <br>
 
         <em class="text-muted">
