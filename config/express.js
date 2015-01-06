@@ -149,5 +149,23 @@ module.exports = function(db) {
 	app.set('socketio', io);
 	app.set('server', server);
 
+
+	// init socket.io sockets
+	var mongoose = require('mongoose'),
+	Trip = mongoose.model('Trip');
+	Trip.find({}).exec(function(err, trips) {
+		var count = 0;
+		trips.forEach(function(trip) {
+			var tripSocket = io.of('/' + trip._id);
+			tripSocket.on('connection', function(socket){
+				socket.on('sendUpdate', function(data){
+					socket.broadcast.emit('gotUpdate', {});
+				});
+			});
+			count++;
+		});
+		console.log('Initialized socket for ' + count + ' trips');
+	});
+
 	return app;
 };
