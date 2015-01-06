@@ -15,7 +15,8 @@ var ApplicationConfiguration = (function() {
 																						 'oitozero.ngSweetAlert',
 																						 'ngDialog',
 																						 'countrySelect',
-																						 'disqusHere'];
+																						 'disqusHere',
+																						 'btford.socket-io'];
 
 	// Add a new vertical module
 	var registerModule = function(moduleName, dependencies) {

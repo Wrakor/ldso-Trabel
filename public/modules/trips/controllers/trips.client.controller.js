@@ -1,21 +1,20 @@
 'use strict';
 
 // Trips controller
+angular.module('trips').controller('TripsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Trips', 'uiGmapGoogleMapApi', 'ngDialog', '$http', 'SweetAlert', 'Socket',
+	function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http, SweetAlert, Socket) {
+		$scope.user = Authentication.user;
+		$scope.authentication = Authentication;
 
-angular.module('trips').controller('TripsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Trips', 'uiGmapGoogleMapApi', 'ngDialog', '$http', 'SweetAlert',
-  function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http, SweetAlert) {
-    $scope.user = Authentication.user;
-    $scope.authentication = Authentication;
-
-    $scope.map = {
-      //TODO: Center map on trip markers
-      center: {
-        latitude: 20,
-        longitude: 0
-      },
-      zoom: 2,
-      events: {
-        /*click: function(maps, eventName, args){
+		$scope.map = {
+			//TODO: Center map on trip markers
+			center: {
+				latitude: 20,
+				longitude: 0
+			},
+			zoom: 2,
+			events: {
+				/*click: function(maps, eventName, args){
 					console.log('CLICKED ON:', args[0].latLng);
 				},
 				center_changed: function(maps, eventName, args){
@@ -106,6 +105,26 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
         //fix error when running tests
         if (typeof $scope.init === 'function') {
           $scope.init();
+          if(editMode){ //Deal with socket connection
+
+						console.log('Initializing socket');
+						var socket = null;
+
+						Socket.socketFactory($stateParams.tripId, function(sock){
+							socket = sock;
+						}); //opens sockey connection 
+
+						
+						socket.on('individualStuff', function(data){
+							console.log('Received event individualStuff. Data = ' + data);
+						});
+						socket.on('general', function(data){
+							console.log('Received event general. Data = ' + data);
+						});
+
+
+						socket.emit('hi', {data: 'working'});
+					}
         }
       });
     };

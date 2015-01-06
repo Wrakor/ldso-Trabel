@@ -25,7 +25,8 @@
     "restangular": "~1.4.0",
     "disqus-here": "~0.0.3",
     "angularjs-country-select": "*",
-    "bootstrap-social": "~4.8.0"
+    "bootstrap-social": "~4.8.0",
+    "angular-socket-io": "~0.7.0"
   },
   "resolutions": {
     "angular": "~1.x"
