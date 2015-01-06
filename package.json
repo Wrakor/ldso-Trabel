@@ -26,6 +26,7 @@
     "forever": "~0.11.0",
     "glob": "~4.0.5",
     "grunt-cli": "~0.1.13",
+    "grunt-redirect": "0.0.1",
     "helmet": "~0.4.0",
     "lodash": "~2.4.1",
     "method-override": "~2.1.2",

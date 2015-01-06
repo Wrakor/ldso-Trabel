@@ -30,7 +30,7 @@
       <div class="row">
         <div id="breadcrumb" class="col-xs-12" style="margin-bottom: 0px;">
           <ol class="breadcrumb pull-left">
-            <li><a class="editable" ng-class="{disabled: isLoading}" onaftersave="trip.$update()" editable-text="trip.name" tooltip="Click to change name" tooltip-placement="right">{{trip.name}}</a>
+            <li><a class="editable" ng-class="{disabled: isLoading}" onaftersave="updateTrip()" editable-text="trip.name" tooltip="Click to change name" tooltip-placement="right">{{trip.name}}</a>
             </li>
           </ol>
           <div class="breadcrumb-right">
