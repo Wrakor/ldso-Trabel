@@ -98,7 +98,7 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
     };
 
     // Find existing Trip
-    $scope.findOne = function() {
+    $scope.findOne = function(editMode) {
       $scope.trip = Trips.get({
         tripId: $stateParams.tripId
       }, function(data) { //this runs after trip is loaded
@@ -106,24 +106,17 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
         if (typeof $scope.init === 'function') {
           $scope.init();
           if(editMode){ //Deal with socket connection
+	
+						$scope.socket = Socket.factory($stateParams.tripId); //opens socket connection 
+						
 
-						console.log('Initializing socket');
-						var socket = null;
-
-						Socket.socketFactory($stateParams.tripId, function(sock){
-							socket = sock;
-						}); //opens sockey connection 
+						$scope.socket.on('gotUpdate', function(data){
+						
+							$scope.findOne(false);
+						});
+					
 
 						
-						socket.on('individualStuff', function(data){
-							console.log('Received event individualStuff. Data = ' + data);
-						});
-						socket.on('general', function(data){
-							console.log('Received event general. Data = ' + data);
-						});
-
-
-						socket.emit('hi', {data: 'working'});
 					}
         }
       });
@@ -295,7 +288,10 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
           $scope.isLoading = false;
           $scope.sortableOptions.disabled = false;
           $scope.POIsortableOptions.disabled = false;
+          $scope.socket.emit('sendUpdate', {});
         });
+
+
       };
 
       $scope.sortableOptions = {

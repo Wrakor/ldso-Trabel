@@ -39,13 +39,10 @@ exports.create = function(req, res) {
 	var socketio = req.app.get('socketio');
 	var tripSocket = socketio.of('/' + trip._id);
 	tripSocket.on('connection', function(socket){
-		console.log('Connected!');
-		socket.on('hi', function(data){
-			console.log('Received event Hi. Data = ' + data);
+		
+		socket.on('sendUpdate', function(data){
+			socket.broadcast.emit('gotUpdate', {});
 		});
-		socket.emit('individualStuff', {data: 'some stuff'});
-
-		tripSocket.emit('general', {data: 'general stuff'});
 	});
 	
 };

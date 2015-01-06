@@ -57,7 +57,9 @@ module.exports = {
 				'public/lib/ngDialog/js/ngDialog.js',
 				'public/lib/disqus-here/src/disqus-here.js',
 				'public/lib/angularjs-country-select/angular.country-select.js',
+				'public/lib/socket.io-client/socket.io.js',
 				'public/lib/angular-socket-io/socket.min.js'
+
 				//'public/lib/angular-foundation/mm-foundation-tpls-VERSION.js',
 
 

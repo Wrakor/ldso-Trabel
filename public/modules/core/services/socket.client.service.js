@@ -1,19 +1,22 @@
-'use strict';
 /*global io:false */
+'use strict';
+
 
 //socket factory that provides the socket service
-angular.module('core').factory('Socket', ['$location',
-    function($location) {
-
+angular.module('core').factory('Socket', ['socketFactory', '$location',
+    function(socketFactory, $location) {
 
       return { 
-      	socketFactory: function(id) { 
+      	factory: function(id) { 
 
-          var data = {
+          var myIoSocket = io.connect($location.protocol() + '://' + $location.host() + ':' + $location.port() + '/' + id);
+
+          var mySocket = socketFactory({
             prefix: '',
-            ioSocket: io.connect($location.protocol() + '://' + $location.host() + ':' + $location.port() + '/' + id)
-          };
-          return data;
+            ioSocket: myIoSocket
+          });
+
+          return mySocket;
       	}
 	    };
     }
