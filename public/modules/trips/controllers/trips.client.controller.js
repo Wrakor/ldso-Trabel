@@ -3,6 +3,7 @@
 // Trips controller
 angular.module('trips').controller('TripsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Trips', 'uiGmapGoogleMapApi', 'ngDialog', '$http', 'SweetAlert', 'Socket',
 	function($scope, $stateParams, $location, Authentication, Trips, gmap, ngDialog, $http, SweetAlert, Socket) {
+		$scope.user = Authentication.user;
 		$scope.authentication = Authentication;
 
 		$scope.map = {
