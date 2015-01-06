@@ -26,7 +26,8 @@
     "disqus-here": "~0.0.3",
     "angularjs-country-select": "*",
     "bootstrap-social": "~4.8.0",
-    "angular-socket-io": "~0.7.0"
+    "angular-socket-io": "~0.7.0",
+    "socket.io-client": "~1.2.1"
   },
   "resolutions": {
     "angular": "~1.x"
