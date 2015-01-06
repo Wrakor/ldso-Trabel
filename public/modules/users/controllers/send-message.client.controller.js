@@ -73,7 +73,6 @@ angular.module('users').controller('SendMessageController', ['$scope', '$http', 
                 .success(function(data, status, headers, config){
                   console.log('SUCESS');
                   console.log(data);
-                  console.log('Fuck Yeah!');
 
 				  SweetAlert.swal('Message Sent!', '', 'success');
                 })
