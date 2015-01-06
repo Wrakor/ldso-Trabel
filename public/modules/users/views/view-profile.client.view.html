@@ -1,20 +1,12 @@
 <nav data-ng-controller="ViewProfileController" data-ng-init="findUser()" ng-show="user">
 	<div id="content" class="col-xs-12 col-sm-12">
 
-		<div class="preloader" style="display: none;">
-			<img src="img/devoops_getdata.gif" class="devoops-getdata" alt="preloader">
-		</div>
 		<div id="ajax-content">
 			<div class="row">
 				<div id="breadcrumb" class="col-xs-12">
 					<ol class="breadcrumb pull-left">
 						<li><a>{{user.displayName}}'s profile</a></li>
 					</ol>
-					<div id="social" class="pull-right">
-
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-					</div>
 				</div>
 			</div>
 			<div class="row">
@@ -47,4 +39,3 @@
 		</div>
 	</div>
 </nav>
-

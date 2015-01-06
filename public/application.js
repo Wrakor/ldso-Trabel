@@ -8,7 +8,7 @@ angular.module(ApplicationConfiguration.applicationModuleName).config(['$locatio
 	function($locationProvider) {
 		$locationProvider.hashPrefix('!');
    // new WOW().init();
-   
+
 	}
 
 ]).run(function(editableOptions) {

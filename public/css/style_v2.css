@@ -2144,7 +2144,7 @@ border-radius: 50%;}
   right: 36px;
   background: url(../img/chevron-right.png) 0 0 no-repeat;
 }
-#social a {
+.breadcrumb-right a {
   margin:0 15px 0 0;
   color:#9C9A78;
   display: block;

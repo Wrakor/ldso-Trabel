@@ -144,12 +144,6 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
         scope: $scope,
         className: 'ngdialog-theme-plain'
       });
-
-      dialog.closePromise.then(function(data) {
-        console.log(data.id + ' has been dismissed.');
-        console.log(data.value);
-        $scope.trip = data.value;
-      });
     };
 
     $scope.leaveTrip = function() {

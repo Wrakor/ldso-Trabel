@@ -1,9 +1,6 @@
 <div data-ng-controller="TripsController" data-ng-init="findOne()">
   <div id="content" class="col-xs-12 col-sm-12">
 
-    <div class="preloader" style="display: none;">
-      <img src="img/devoops_getdata.gif" class="devoops-getdata" alt="preloader">
-    </div>
     <div id="ajax-content">
       <div class="row">
         <div id="breadcrumb" class="col-xs-12" style="margin-bottom: 0px;">
@@ -12,13 +9,6 @@
               <a data-ng-bind="trip.name"></a>
             </li>
           </ol>
-          <div id="social" class="pull-right" ng-switch on="trip.privacy">
-            <a ng-switch-when="1">Public Trip</a>
-            <a ng-switch-when="0">Private Trip</a>
-
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-          </div>
         </div>
       </div>
       <div class="row">
@@ -100,7 +90,7 @@
   <disqus-here shortname="ldsotrabel" identifier="{{disqus.tripID}}" title="{{disqus.tripID}}" url="{{disqus.url}}">
   </disqus-here>
 </div>
-  <!--	<div
+<!--	<div
 	  class="fb-like"
 	  data-share="true"
 	  data-width="450"
