@@ -19,18 +19,35 @@ var mongoose = require('mongoose'),
  * Create a Trip
  */
 exports.create = function(req, res) {
-  var trip = new Trip(req.body);
-  trip.user = req.user;
 
-  trip.save(function(err) {
-    if (err) {
-      return res.status(400).send({
-        message: errorHandler.getErrorMessage(err)
-      });
-    } else {
-      res.jsonp(trip);
-    }
-  });
+	var trip = new Trip(req.body);
+	trip.user = req.user;
+
+
+
+	trip.save(function(err) {
+		if (err) {
+			return res.status(400).send({
+				message: errorHandler.getErrorMessage(err)
+			});
+		} else {
+			res.jsonp(trip);
+		}
+	});
+
+	console.log('Initializing socketio');
+	var socketio = req.app.get('socketio');
+	var tripSocket = socketio.of('/' + trip._id);
+	tripSocket.on('connection', function(socket){
+		console.log('Connected!');
+		socket.on('hi', function(data){
+			console.log('Received event Hi. Data = ' + data);
+		});
+		socket.emit('individualStuff', {data: 'some stuff'});
+
+		tripSocket.emit('general', {data: 'general stuff'});
+	});
+	
 };
 
 /**
