@@ -364,7 +364,6 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
       };
 
       $scope.init = function() {
-
         if ($scope.trip.usersThatLiked.indexOf($scope.user._id) === -1)
           $scope.alreadyLiked = false;
         else
@@ -373,21 +372,32 @@ angular.module('trips').controller('TripsController', ['$scope', '$stateParams',
         var map = $scope.map.object.getGMap();
         $scope.bounds = new maps.LatLngBounds();
         $scope.lineCoords = [];
-        for (var i = 0; i < $scope.trip.markers.length; i++) {
-          var marker = $scope.trip.markers[i];
-          var latlng = new maps.LatLng(
-            marker.location.latitude,
-            marker.location.longitude
-          );
-          $scope.lineCoords.push(latlng);
-          if (marker.viewport)
-            $scope.bounds.union(makeViewport(marker.viewport));
-          else
-            $scope.bounds.extend(latlng);
+        if($scope.trip.markers.length === 0) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            map.setCenter({
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            });
+            map.setZoom(17);
+          });
         }
-        $scope.path.setPath($scope.lineCoords);
-        $scope.path.setMap(map);
-        map.fitBounds($scope.bounds);
+        else {
+          for (var i = 0; i < $scope.trip.markers.length; i++) {
+            var marker = $scope.trip.markers[i];
+            var latlng = new maps.LatLng(
+              marker.location.latitude,
+              marker.location.longitude
+            );
+            $scope.lineCoords.push(latlng);
+            if (marker.viewport)
+              $scope.bounds.union(makeViewport(marker.viewport));
+            else
+              $scope.bounds.extend(latlng);
+          }
+          $scope.path.setPath($scope.lineCoords);
+          $scope.path.setMap(map);
+          map.fitBounds($scope.bounds);
+        }
       };
 
       $scope.resetMap = function() {
